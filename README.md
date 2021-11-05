@@ -1,6 +1,7 @@
-# Smart Shopping App Homepage
+# Smart Shopping App
 
-ePages integration for Google Smart Shopping
+This repository hosts the app home page for the ePages integration
+for Google Smart Shopping.
 
 ## Requirements
 
