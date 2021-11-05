@@ -229,8 +229,8 @@ function Homepage() {
     <footer className="bg-black text-center py-5">
       <div className="container px-5">
           <div className="text-white-50 small">
-              <div className="mb-2">&copy; TODO: i18n "legal.copyright-notice" </div>
-              <a href="#">TODO: i18n "legal.imprint.label" </a>
+              <div className="mb-2">&copy; ePages GmbH 2021 </div>
+              <a href="https://epages.com/de/impressum/">Impressum</a>
           </div>
       </div>
     </footer>

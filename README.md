@@ -20,6 +20,12 @@ For the OAuth app verification we need to fulfil the following requirements:
 npm start
 ```
 
+### Publish to GitHub pages
+
+```
+npm run deploy
+```
+
 ## References
 
 - https://stackoverflow.com/questions/59793437/example-of-an-oauth-homepage-for-google
