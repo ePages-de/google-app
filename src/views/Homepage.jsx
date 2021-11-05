@@ -25,7 +25,6 @@ function Homepage() {
         </div>
     </nav>
     
-    
     <header className="masthead">
         <div className="container px-5">
             <div className="row gx-5 align-items-center">
@@ -42,7 +41,6 @@ function Homepage() {
             </div>
         </div>
     </header>
-    
     
     <aside className="text-center bg-gradient-primary-to-secondary">
         <div className="container px-5">
@@ -236,12 +234,6 @@ function Homepage() {
           </div>
       </div>
     </footer>
-    
-    
-    
-    
-    
-    
     
     </div>
   );
