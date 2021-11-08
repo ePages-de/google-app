@@ -20,6 +20,8 @@ For the OAuth app verification we need to fulfil the following requirements:
 npm start
 ```
 
+Now, the app will be accessible on http://localhost:3000/smart-shopping-app .
+
 ### Publish to GitHub pages
 
 ```

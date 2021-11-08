@@ -1,8 +1,13 @@
 import './styles.css';
 import './tiles.css';
 import './custom.css';
+import i18n from 'i18next';
+
 
 function Homepage() {
+  
+  var myTranslation = i18n.t('test.label');
+  console.log("My first translation: " + myTranslation);
   
   return (
     <div className="App">
@@ -33,7 +38,7 @@ function Homepage() {
                   <div className="mb-7 mb-lg-0 text-center text-lg-start">
                       <h1 className="display-4 lh-4 mb-6">Google Smart Shopping App</h1>
                       <p className="lead fw-normal text-muted mb-5">
-                        TODO: tagline
+                        TODO: Tagline
                       </p>
                   </div>
               </div>
