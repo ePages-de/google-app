@@ -3,11 +3,11 @@ import Redirect from './views/Redirect';
 import './App.css';
 import i18n from 'i18next';
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from 'i18next-browser-languagedetector';
-import translationDE from './locales/de.json'
-import translationEN from './locales/en.json'
-import translationES from './locales/es.json'
-import translationNL from './locales/nl.json'
+import translationDE from './locales/de.json';
+import translationEN from './locales/en.json';
+import translationES from './locales/es.json';
+import translationNL from './locales/nl.json';
+import LanguageDetector from './utils/lang.js';
 
 const resources = {
   de: {
@@ -23,7 +23,6 @@ const resources = {
     translation: translationNL
   }
 };
-
 
 function App() {
   i18n
