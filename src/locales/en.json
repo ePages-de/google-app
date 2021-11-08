@@ -1,7 +1,4 @@
 {
-	"test": {
-		"label": "This is just a test"
-	},
 	"views": {
 		"homepage": {
 			"navbar": {
@@ -79,7 +76,7 @@
 					"label": "Rechtliches"
 				},
 				"downloadHint": {
-					"label": "(Rechtsklick zum Herunterladen)"
+					"label": "(Click right to download)"
 				},
 				"privacyNotice": {
 					"label": "Datenschutzrichtlinie"

@@ -1,7 +1,4 @@
 {
-	"test": {
-		"label": "Dies ist ein Test"
-	},
 	"views": {
 		"homepage": {
 			"navbar": {
@@ -17,14 +14,6 @@
 			},
 			"tagline": {
 				"label": "Mit der Google Smart Shopping Integration für Ihren ePages Shop können Sie mit minimalem Aufwand Online-Werbeanzeigen für Ihren Onlineshop schalten. Verbinden Sie Ihre Google Konten, laden Sie Ihre Production hoch und erstellen Sie eine Kampangne – das wars."
-			},
-			"concept": {
-				"heading": {
-					"label": "Konzept"
-				},
-				"description": {
-					"label": "ePages verwaltet Ihre Google Merchant Center und Google Ads Konten in Ihrem Namen. Ihre Produkte werden in das Merchant Center hochgeladen. Das Merchant Center Konto wird mit dem Ads Konto verknüpft. In dem Ads Konto werden Kampangnen angelegt und Berichte abgefragt, so dass Sie in dem Ads Konto selbst nichts weiter machen brauchen als Ihre Rechnungsdaten zu hinterlegen. Nach dem Anlegen von Smart Shopping Kampagnen wird Tracking Information zu Conversions und Remarketing von Ihrem Shop an Google gesendet."
-				}
 			},
 			"feature1": {
 				"heading": {
@@ -72,6 +61,14 @@
 				},
 				"description": {
 					"label": "Behalten Sie die Übersicht über die Kosten und Nutzen der Kampangnen, direkt aus Ihrer Shop Administration heraus."
+				}
+			},
+			"concept": {
+				"heading": {
+					"label": "Konzept"
+				},
+				"description": {
+					"label": "ePages verwaltet Ihre Google Merchant Center und Google Ads Konten in Ihrem Namen. Ihre Produkte werden in das Merchant Center hochgeladen. Das Merchant Center Konto wird mit dem Ads Konto verknüpft. In dem Ads Konto werden Kampangnen angelegt und Berichte abgefragt, so dass Sie in dem Ads Konto selbst nichts weiter machen brauchen als Ihre Rechnungsdaten zu hinterlegen. Nach dem Anlegen von Smart Shopping Kampagnen wird Tracking Information zu Conversions und Remarketing von Ihrem Shop an Google gesendet."
 				}
 			},
 			"legal": {

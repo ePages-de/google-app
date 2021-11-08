@@ -1,7 +1,4 @@
 {
-	"test": {
-		"label": "This is just a test"
-	},
 	"views": {
 		"homepage": {
 			"navbar": {

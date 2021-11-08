@@ -6,9 +6,6 @@ import i18n from 'i18next';
 
 function Homepage() {
   
-  var myTranslation = i18n.t('test.label');
-  console.log("My first translation: " + myTranslation);
-  
   return (
     <div className="App">
     
@@ -22,9 +19,21 @@ function Homepage() {
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li className="nav-item"><a className="nav-link me-lg-3" href="#features">TODO: i18n "navbar.features" </a></li>
-                    <li className="nav-item"><a className="nav-link me-lg-3" href="#concept">TODO: i18n "navbar.concept" </a></li>
-                    <li className="nav-item"><a className="nav-link me-lg-3" href="#legal">TODO: i18n "navbar.legal" </a></li>
+                    <li className="nav-item">
+                      <a className="nav-link me-lg-3" href="#features">
+                        { i18n.t('views.homepage.navbar.features.label') }
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link me-lg-3" href="#concept">
+                        { i18n.t('views.homepage.navbar.concept.label') }
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link me-lg-3" href="#legal">
+                        { i18n.t('views.homepage.navbar.legal.label') }
+                      </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -38,7 +47,7 @@ function Homepage() {
                   <div className="mb-7 mb-lg-0 text-center text-lg-start">
                       <h1 className="display-4 lh-4 mb-6">Google Smart Shopping App</h1>
                       <p className="lead fw-normal text-muted mb-5">
-                        TODO: Tagline
+                        { i18n.t('views.homepage.tagline.label') }
                       </p>
                   </div>
               </div>
@@ -81,10 +90,10 @@ function Homepage() {
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
-                                    TODO: i18n "feature1.heading" 
+                                    { i18n.t('views.homepage.feature1.heading.label') }
                                   </h3>
                                   <p className="text-muted mb-0">
-                                    TODO: i18n "feature1.description" 
+                                    { i18n.t('views.homepage.feature1.description.label') }
                                   </p>
                               </div>
                           </div>
@@ -93,10 +102,10 @@ function Homepage() {
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
-                                    TODO: i18n "feature2.heading" 
+                                    { i18n.t('views.homepage.feature2.heading.label') }
                                   </h3>
                                   <p className="text-muted mb-0">
-                                    TODO: i18n "feature2.description" 
+                                    { i18n.t('views.homepage.feature2.description.label') }
                                   </p>
                               </div>
                           </div>
@@ -106,10 +115,10 @@ function Homepage() {
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
-                                    TODO: i18n "feature3.heading" 
+                                    { i18n.t('views.homepage.feature3.heading.label') }
                                   </h3>
                                   <p className="text-muted mb-0">
-                                    TODO: i18n "feature3.description" 
+                                    { i18n.t('views.homepage.feature3.description.label') }
                                   </p>
                               </div>
                           </div>
@@ -121,10 +130,10 @@ function Homepage() {
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
-                                    TODO: i18n "feature4.heading" 
+                                    { i18n.t('views.homepage.feature4.heading.label') }
                                   </h3>
                                   <p className="text-muted mb-0">
-                                    TODO: i18n "feature4.description" 
+                                    { i18n.t('views.homepage.feature4.description.label') }
                                   </p>
                               </div>
                           </div>
@@ -133,10 +142,10 @@ function Homepage() {
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
-                                    TODO: i18n "feature5.heading" 
+                                    { i18n.t('views.homepage.feature5.heading.label') }
                                   </h3>
                                   <p className="text-muted mb-0">
-                                    TODO: i18n "feature5.description" 
+                                    { i18n.t('views.homepage.feature5.description.label') }
                                   </p>
                               </div>
                           </div>
@@ -145,10 +154,10 @@ function Homepage() {
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
-                                    TODO: i18n "feature6.heading"
+                                    { i18n.t('views.homepage.feature6.heading.label') }
                                   </h3>
                                   <p className="text-muted mb-0">
-                                    TODO: i18n "feature6.description" 
+                                    { i18n.t('views.homepage.feature6.description.label') }
                                   </p>
                               </div>
                           </div>
@@ -172,10 +181,10 @@ function Homepage() {
             
               <div className="col-12 col-lg-5">
                   <h2 className="display-4 lh-1 mb-4">
-                    TODO: i18n "concept.heading" 
+                    { i18n.t('views.homepage.concept.heading.label') }
                   </h2>
                   <p className="lead fw-normal text-muted mb-5 mb-lg-0">
-                    TODO: i18n "concept.description" 
+                    { i18n.t('views.homepage.concept.description.label') }
                   </p>
               </div>
               <div className="col-sm-8 col-md-6">
@@ -195,7 +204,7 @@ function Homepage() {
 
               <div className="mb-7 mb-lg-0 text-center text-lg-start">
                   <h2 className="display-4 lh-4 mb-6">
-                    TODO: i18n "legal.heading" 
+                    { i18n.t('views.homepage.legal.heading.label') }
                   </h2>
 
                   <div className="row">
@@ -204,9 +213,9 @@ function Homepage() {
                         <a href="#">
                           <div className="tile blue">
                             <h3 className="title"><i className="bi bi-file-text"></i>
-                              TODO: i18n "legal.privacy-notice.label" 
+                              { i18n.t('views.homepage.legal.privacyNotice.label') }
                             </h3>
-                            TODO: i18n "legal.download-hint" 
+                            { i18n.t('views.homepage.legal.downloadHint.label') }
                           </div>
                         </a>					
                     </div>
@@ -214,9 +223,9 @@ function Homepage() {
                         <a href="#">
                           <div className="tile blue">
                               <h3 className="title"><i className="bi bi-file-text"></i>
-                                TODO: i18n "legal.terms-of-use.label" 
+                                { i18n.t('views.homepage.legal.termsOfUse.label') }
                               </h3>
-                              TODO: i18n "legal.download-hint" 
+                              { i18n.t('views.homepage.legal.downloadHint.label') }
                           </div>
                         </a>
                     </div>  
@@ -234,8 +243,8 @@ function Homepage() {
     <footer className="bg-black text-center py-5">
       <div className="container px-5">
           <div className="text-white-50 small">
-              <div className="mb-2">&copy; ePages GmbH 2021 </div>
-              <a href="https://epages.com/de/impressum/">Impressum</a>
+              <div className="mb-2">{ i18n.t('views.homepage.legal.copyrightNotice.label') }</div>
+              <a href={ i18n.t('views.homepage.legal.imprintLink.label') }>{ i18n.t('views.homepage.legal.imprint.label') }</a>
           </div>
       </div>
     </footer>
