@@ -4,27 +4,18 @@
 }
 
 button {
-	background-repeat: no-repeat;
-	padding: 0 12px 0 0;
+	background-repeat: no-repeat !IMPORTANT;
+	padding: 0 12px 0 50px;
 	background: #4285f4;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	max-width: 248px;
 	border: 0;
+	height: 40px;
 }
 
 button:hover {
 	background: #3367d6;
 }
 
-button::before {
-	background-repeat: no-repeat;
-	content: "";
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	vertical-align: middle;
-	margin-right: 11px;
-	border: 0;
-}
