@@ -1,4 +1,4 @@
-# Smart Shopping App
+# Google App
 
 This repository hosts the app home page for the ePages integration
 for Google Smart Shopping.
@@ -7,10 +7,10 @@ for Google Smart Shopping.
 
 For the OAuth app verification we need to fulfil the following requirements:
 
-- Explain how the app uses the user's data
 - Explain the app features
-- Use the ePages branding
+- Explain how the app uses the user's data
 - Link to the privacy policy
+- Use the ePages branding
 
 ## Development
 
@@ -20,7 +20,7 @@ For the OAuth app verification we need to fulfil the following requirements:
 npm start
 ```
 
-Now, the app will be accessible on http://localhost:3000/smart-shopping-app .
+Now, the app will be accessible on http://localhost:3000/google-app .
 
 ### Publish to GitHub pages
 
