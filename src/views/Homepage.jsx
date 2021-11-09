@@ -5,7 +5,7 @@ import i18n from 'i18next';
 import GoogleLoginButton from '../components/GoogleLoginButton';
 
 
-function Homepage() {
+function Homepage(props) {
   
   return (
     <div className="App">
@@ -50,7 +50,11 @@ function Homepage() {
                       <p className="lead fw-normal text-muted mb-5">
                         { i18n.t('views.homepage.tagline.label') }
                       </p>
-                      <GoogleLoginButton />
+                      {
+                        props.oauthRequestParameters &&
+                          <GoogleLoginButton oauthRequestParameters={props.oauthRequestParameters} />
+                      }
+                      
                   </div>
               </div>
 

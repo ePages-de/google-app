@@ -42,9 +42,19 @@ function App() {
   } else {
     return (
       <div className="App">
-        <Homepage />
+        <Homepage oauthRequestParameters={ _oauthRequestParameters() } />
       </div>
     );
+  }
+}
+
+function _oauthRequestParameters() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const accessType = urlParams.get("access_type");
+  
+  if (accessType) {
+    return queryString;
   }
 }
 
