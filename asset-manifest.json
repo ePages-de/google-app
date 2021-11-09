@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/smart-shopping-app/static/css/main.25533858.chunk.css",
-    "main.js": "/smart-shopping-app/static/js/main.604ee87d.chunk.js",
-    "main.js.map": "/smart-shopping-app/static/js/main.604ee87d.chunk.js.map",
+    "main.js": "/smart-shopping-app/static/js/main.c604297f.chunk.js",
+    "main.js.map": "/smart-shopping-app/static/js/main.c604297f.chunk.js.map",
     "runtime-main.js": "/smart-shopping-app/static/js/runtime-main.8257e253.js",
     "runtime-main.js.map": "/smart-shopping-app/static/js/runtime-main.8257e253.js.map",
-    "static/js/2.120f9172.chunk.js": "/smart-shopping-app/static/js/2.120f9172.chunk.js",
-    "static/js/2.120f9172.chunk.js.map": "/smart-shopping-app/static/js/2.120f9172.chunk.js.map",
+    "static/js/2.988f0405.chunk.js": "/smart-shopping-app/static/js/2.988f0405.chunk.js",
+    "static/js/2.988f0405.chunk.js.map": "/smart-shopping-app/static/js/2.988f0405.chunk.js.map",
     "index.html": "/smart-shopping-app/index.html",
     "static/css/main.25533858.chunk.css.map": "/smart-shopping-app/static/css/main.25533858.chunk.css.map",
-    "static/js/2.120f9172.chunk.js.LICENSE.txt": "/smart-shopping-app/static/js/2.120f9172.chunk.js.LICENSE.txt"
+    "static/js/2.988f0405.chunk.js.LICENSE.txt": "/smart-shopping-app/static/js/2.988f0405.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8257e253.js",
-    "static/js/2.120f9172.chunk.js",
+    "static/js/2.988f0405.chunk.js",
     "static/css/main.25533858.chunk.css",
-    "static/js/main.604ee87d.chunk.js"
+    "static/js/main.c604297f.chunk.js"
   ]
 }
