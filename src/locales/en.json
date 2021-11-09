@@ -95,5 +95,10 @@
 				}
 			}
 		}
+	},
+	"components": {
+		"googleLoginButton": {
+			"label": "Sign in with Google"
+		}
 	}
 }

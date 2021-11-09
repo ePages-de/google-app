@@ -96,5 +96,10 @@
 			}
 		},
 		"callback": {}
+	},
+	"components": {
+		"googleLoginButton": {
+			"label": "Mit Google anmelden"
+		}
 	}
 }

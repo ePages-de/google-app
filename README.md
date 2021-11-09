@@ -28,6 +28,12 @@ Now, the app will be accessible on http://localhost:3000/google-app .
 npm run deploy
 ```
 
+### Localization
+
+```jsx
+{ i18n.t('views.homepage.navbar.concept.label') }
+```
+
 ## References
 
 - https://stackoverflow.com/questions/59793437/example-of-an-oauth-homepage-for-google
