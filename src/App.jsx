@@ -54,7 +54,8 @@ function _oauthParams() {
   const accessType = urlParams.get("access_type");
   
   if (accessType) {
-    urlParams.set('redirect_uri', 'http://localhost:3000');
+    const baseUrl = window.location.href.replace(/\/\?.*/g, '')
+    urlParams.set('redirect_uri', baseUrl);
     return urlParams;
   }
 }
