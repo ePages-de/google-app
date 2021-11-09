@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/smart-shopping-app/static/css/main.25533858.chunk.css",
-    "main.js": "/smart-shopping-app/static/js/main.c604297f.chunk.js",
-    "main.js.map": "/smart-shopping-app/static/js/main.c604297f.chunk.js.map",
-    "runtime-main.js": "/smart-shopping-app/static/js/runtime-main.8257e253.js",
-    "runtime-main.js.map": "/smart-shopping-app/static/js/runtime-main.8257e253.js.map",
-    "static/js/2.988f0405.chunk.js": "/smart-shopping-app/static/js/2.988f0405.chunk.js",
-    "static/js/2.988f0405.chunk.js.map": "/smart-shopping-app/static/js/2.988f0405.chunk.js.map",
-    "index.html": "/smart-shopping-app/index.html",
-    "static/css/main.25533858.chunk.css.map": "/smart-shopping-app/static/css/main.25533858.chunk.css.map",
-    "static/js/2.988f0405.chunk.js.LICENSE.txt": "/smart-shopping-app/static/js/2.988f0405.chunk.js.LICENSE.txt"
+    "main.css": "/google-app/static/css/main.25533858.chunk.css",
+    "main.js": "/google-app/static/js/main.1e052816.chunk.js",
+    "main.js.map": "/google-app/static/js/main.1e052816.chunk.js.map",
+    "runtime-main.js": "/google-app/static/js/runtime-main.d7eaba8e.js",
+    "runtime-main.js.map": "/google-app/static/js/runtime-main.d7eaba8e.js.map",
+    "static/js/2.a758714a.chunk.js": "/google-app/static/js/2.a758714a.chunk.js",
+    "static/js/2.a758714a.chunk.js.map": "/google-app/static/js/2.a758714a.chunk.js.map",
+    "index.html": "/google-app/index.html",
+    "static/css/main.25533858.chunk.css.map": "/google-app/static/css/main.25533858.chunk.css.map",
+    "static/js/2.a758714a.chunk.js.LICENSE.txt": "/google-app/static/js/2.a758714a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8257e253.js",
-    "static/js/2.988f0405.chunk.js",
+    "static/js/runtime-main.d7eaba8e.js",
+    "static/js/2.a758714a.chunk.js",
     "static/css/main.25533858.chunk.css",
-    "static/js/main.c604297f.chunk.js"
+    "static/js/main.1e052816.chunk.js"
   ]
 }
