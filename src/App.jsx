@@ -42,13 +42,13 @@ function App() {
   } else {
     return (
       <div className="App">
-        <Homepage oauthParams={ _oauthParams() } />
+        <Homepage oauthRequestParams={ _oauthRequestParams() } />
       </div>
     );
   }
 }
 
-function _oauthParams() {
+function _oauthRequestParams() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const accessType = urlParams.get("access_type");

@@ -4,7 +4,7 @@ import i18n from 'i18next';
 
 function GoogleLoginButton(props) {
   
-  const oauthInitUrl = 'https://accounts.google.com/o/oauth2/auth?' + props.oauthParams.toString();
+  const oauthInitUrl = 'https://accounts.google.com/o/oauth2/auth?' + props.oauthRequestParams.toString();
   
   console.log(oauthInitUrl);
   

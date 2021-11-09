@@ -51,8 +51,8 @@ function Homepage(props) {
                         { i18n.t('views.homepage.tagline.label') }
                       </p>
                       {
-                        props.oauthParams &&
-                          <GoogleLoginButton oauthParams={props.oauthParams} />
+                        props.oauthRequestParams &&
+                          <GoogleLoginButton oauthRequestParams={props.oauthRequestParams} />
                       }
                       
                   </div>
