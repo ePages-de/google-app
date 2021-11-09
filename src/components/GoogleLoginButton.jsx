@@ -4,10 +4,12 @@ import i18n from 'i18next';
 
 function GoogleLoginButton(props) {
   
-  var oauthRequestParameters = props.oauthRequestParameters.replace(/^\?/, '');
+  const oauthInitUrl = 'https://accounts.google.com/o/oauth2/auth?' + props.oauthParams.toString();
+  
+  console.log(oauthInitUrl);
   
   return (
-    <a href={ 'https://accounts.google.com/o/oauth2/auth?' + oauthRequestParameters }>
+    <a href={ oauthInitUrl }>
   		<button className="ep-button google-branding-button" id="GoogleOAuthButton" type="button" name="Save" style={{
   			background: `url(${GoogleButtonBackground})`
   		}}>

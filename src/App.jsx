@@ -42,19 +42,20 @@ function App() {
   } else {
     return (
       <div className="App">
-        <Homepage oauthRequestParameters={ _oauthRequestParameters() } />
+        <Homepage oauthParams={ _oauthParams() } />
       </div>
     );
   }
 }
 
-function _oauthRequestParameters() {
+function _oauthParams() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const accessType = urlParams.get("access_type");
   
   if (accessType) {
-    return queryString;
+    urlParams.set('redirect_uri', 'http://localhost:3000');
+    return urlParams;
   }
 }
 
