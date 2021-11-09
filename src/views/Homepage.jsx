@@ -2,7 +2,7 @@ import './styles.css';
 import './tiles.css';
 import './custom.css';
 import i18n from 'i18next';
-import GoogleButtonBackground from './btn_google_light_normal_ios.svg';
+import GoogleLoginButton from '../components/GoogleLoginButton';
 
 
 function Homepage() {
@@ -50,11 +50,7 @@ function Homepage() {
                       <p className="lead fw-normal text-muted mb-5">
                         { i18n.t('views.homepage.tagline.label') }
                       </p>
-                      <button className="ep-button google-branding-button" id="GoogleOAuthButton" type="button" name="Save" style={{
-              background: `url(${GoogleButtonBackground})`
-            }}>
-                        Sign in with Google
-                      </button>
+                      <GoogleLoginButton />
                   </div>
               </div>
 
