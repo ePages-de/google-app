@@ -90,7 +90,7 @@ function _isRequestComingFromAuthorizationServer() {
 }
 
 function _baseUrl() {
-  return window.location.href.replace(/\?.*/g, '');
+  return window.location.href.replace(/\/\?.*/g, '');
 }
 
 function _isInitPageRequested() {

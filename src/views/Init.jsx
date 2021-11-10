@@ -19,7 +19,7 @@ class Init extends Component {
 		params += `client_id=${ this.state.clientId }`;
 		params += `&response_type=code`;
 		params += `&redirect_uri=http://localhost:3000`;
-		params += `&scope=https://www.googleapis.com/auth/content+https://www.googleapis.com/auth/siteverification+https://www.googleapis.com/auth`;
+		params += `&scope=https://www.googleapis.com/auth/content+https://www.googleapis.com/auth/siteverification+https://www.googleapis.com/auth/adwords`;
 		params += `&access_type=offline`;
 		params += `&prompt=consent`;
 		
@@ -60,7 +60,7 @@ class Init extends Component {
 }
 
 function _baseUrl() {
-  return window.location.href.replace(/\?.*/g, '');
+  return window.location.href.replace(/\/\?.*/g, '');
 }
 
 export default Init;
