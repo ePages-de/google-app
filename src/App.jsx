@@ -1,5 +1,6 @@
 import Homepage from './views/Homepage';
 import Redirect from './views/Redirect';
+import Init from './views/Init';
 import './App.css';
 import i18n from 'i18next';
 import { initReactI18next } from "react-i18next";
@@ -34,8 +35,13 @@ function App() {
     })
   ;
   
-  const oauthResponseParams = _oauthResponseParams();
+  if (_isInitPageRequested()) {
+    return (
+      <Init />
+    );
+  }
   
+  const oauthResponseParams = _oauthResponseParams();
   if (oauthResponseParams) {
     return (
       <div className="App">
@@ -84,7 +90,13 @@ function _isRequestComingFromAuthorizationServer() {
 }
 
 function _baseUrl() {
-  return window.location.href.replace(/\/\?.*/g, '');
+  return window.location.href.replace(/\?.*/g, '');
+}
+
+function _isInitPageRequested() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  return urlParams.get("init");
 }
 
 export default App;
