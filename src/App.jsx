@@ -8,6 +8,7 @@ import translationEN from './locales/en.json';
 import translationES from './locales/es.json';
 import translationNL from './locales/nl.json';
 import LanguageDetector from './utils/lang.js';
+import { encodeState } from './utils/state.js';
 
 const resources = {
   de: {
@@ -54,10 +55,15 @@ function _oauthRequestParams() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const accessType = urlParams.get("access_type");
+  const redirectUri = urlParams.get("redirect_uri");
+  const shopRedirectUri = urlParams.get("state");
   
-  if (accessType) {
-    const baseUrl = window.location.href.replace(/\/\?.*/g, '')
-    urlParams.set('redirect_uri', baseUrl);
+  if (accessType && redirectUri) {
+    urlParams.set('state', encodeState({
+      systemRedirectUri: redirectUri,
+      shopRedirectUri: shopRedirectUri
+    }));
+    urlParams.set('redirect_uri', _baseUrl());
     return urlParams;
   }
 }
@@ -77,6 +83,10 @@ function _isRequestComingFromAuthorizationServer() {
   const authorizationCode = urlParams.get("code");
   
   return authorizationCode != null;
+}
+
+function _baseUrl() {
+  return window.location.href.replace(/\/\?.*/g, '');
 }
 
 export default App;
