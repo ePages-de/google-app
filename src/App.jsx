@@ -33,10 +33,12 @@ function App() {
     })
   ;
   
-  if (_isRequestComingFromAuthorizationServer()) {
+  const oauthResponseParams = _oauthResponseParams();
+  
+  if (oauthResponseParams) {
     return (
       <div className="App">
-        <Redirect />
+        <Redirect oauthResponseParams={ oauthResponseParams } />
       </div>
     );
   } else {
@@ -56,6 +58,15 @@ function _oauthRequestParams() {
   if (accessType) {
     const baseUrl = window.location.href.replace(/\/\?.*/g, '')
     urlParams.set('redirect_uri', baseUrl);
+    return urlParams;
+  }
+}
+
+function _oauthResponseParams() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const code = urlParams.get("code");
+  if (code) {
     return urlParams;
   }
 }
