@@ -55,13 +55,11 @@ function _oauthRequestParams() {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const accessType = urlParams.get("access_type");
-  const redirectUri = urlParams.get("redirect_uri");
-  const shopRedirectUri = urlParams.get("state");
   
-  if (accessType && redirectUri) {
+  if (accessType) {
     urlParams.set('state', encodeState({
-      systemRedirectUri: redirectUri,
-      shopRedirectUri: shopRedirectUri
+      systemRedirectUri: urlParams.get("redirect_uri"),
+      shopRedirectUri: urlParams.get("state")
     }));
     urlParams.set('redirect_uri', _baseUrl());
     return urlParams;
