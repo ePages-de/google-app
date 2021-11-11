@@ -41,12 +41,20 @@ function App() {
     );
   }
   
-  const oauthResponseParams = _oauthResponseParams();
-  if (oauthResponseParams) {
+  const urlParams = new URLSearchParams(window.location.search);
+  
+  if (urlParams.get("code")) {
     return (
       <div className="App">
-        <Redirect oauthResponseParams={ oauthResponseParams } />
+        <Redirect oauthResponseParams={ urlParams } />
       </div>
+    );
+  } else if (urlParams.get("client_id") && !urlParams.get("redirect_uri")) {
+    const clientId = urlParams.get("client_id");
+    return (
+      <div className="App">
+        <Homepage oauthRequestParams={ _defaultAuthRequestParams(clientId) } />
+      </div>    
     );
   } else {
     return (
@@ -70,6 +78,20 @@ function _oauthRequestParams() {
     urlParams.set('redirect_uri', _baseUrl());
     return urlParams;
   }
+}
+
+function _defaultAuthRequestParams(clientId) {
+  const params = new URLSearchParams();
+  
+  params.set('client_id', clientId);
+  params.set('response_type', 'code');
+  params.set('redirect_uri', _baseUrl());
+  params.set('access_type', 'offline');
+  params.set('scope', 'https://www.googleapis.com/auth/content https://www.googleapis.com/auth/siteverification https://www.googleapis.com/auth/adwords');
+  params.set('prompt', 'consent');
+  params.set('flowName', 'GeneralOAuthFlow');
+  
+  return params;
 }
 
 function _oauthResponseParams() {

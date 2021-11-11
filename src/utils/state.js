@@ -6,6 +6,9 @@ function encodeState(state) {
 }
 
 function decodeState(encodedState) {
+	if (!encodedState) {
+		return {};
+	}
 	return JSON.parse(atob(encodedState));
 }
 
