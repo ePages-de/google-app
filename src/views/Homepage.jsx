@@ -12,7 +12,7 @@ function Homepage(props) {
     
     <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div className="container px-5">
-            TODO: ePages logo...
+            <img src={process.env.PUBLIC_URL + '/img/Epages_Logo.png'} style={{ maxWidth: '200px' }} />
           
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -69,13 +69,13 @@ function Homepage(props) {
                   <div className="container-fluid p-0">
                     <div className="row no-gutters popup-gallery">
                       <div className="col-lg-4 col-sm-2">
-                        TODO: Screenshot
+                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/setup_de.png'} height="200px" />
                       </div>
                       <div className="col-lg-4 col-sm-2">
-                        TODO: Screenshot
+                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/productfeed_de.png'} height="200px" />
                       </div>
                       <div className="col-lg-4 col-sm-2">
-                        TODO: Screenshot
+                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/campaign_de.png'} height="200px" />
                       </div>
                     </div>
                   </div>
@@ -170,12 +170,6 @@ function Homepage(props) {
                       </div>
                   </div>
               </div>
-              <div className="col-lg-4 order-lg-0">
-                  
-                  <div className="features-device-mockup">
-                      
-                  </div>
-              </div>
           </div>
         </div>
     </section>
@@ -194,7 +188,7 @@ function Homepage(props) {
                   </p>
               </div>
               <div className="col-sm-8 col-md-6">
-                  TODO: Concept image
+                  <img src={process.env.PUBLIC_URL + '/img/gss-concept.png'} />
               </div>
               
           </div>
