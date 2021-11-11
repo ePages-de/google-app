@@ -95,7 +95,17 @@
 				}
 			}
 		},
-		"callback": {}
+		"callback": {
+			"heading": {
+				"label": "Login erfolgreich"
+			},
+			"redirectionMessage": {
+				"label": "Sie werden in 5 Sekunden automatisch zurück in Ihren Shop umgeleitet, um die Installation der Google App abzuschließen."
+			},
+			"redirectNowButton": {
+				"label": "Jetzt zurückkehren"
+			}
+		}
 	},
 	"components": {
 		"googleLoginButton": {
