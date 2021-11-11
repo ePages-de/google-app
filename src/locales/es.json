@@ -94,6 +94,17 @@
 					"label": "https://epages.com/en/legal-notice"
 				}
 			}
+		},
+		"callback": {
+			"heading": {
+				"label": "Login successful"
+			},
+			"redirectionMessage": {
+				"label": "In 5 seconds, you will be automatically redirected into your shop, to finish the installation of the Google app."
+			},
+			"redirectNowButton": {
+				"label": "Return now"
+			}
 		}
 	},
 	"components": {
