@@ -17,10 +17,18 @@ For the OAuth app verification we need to fulfil the following requirements:
 ### Start app
 
 ```
+npm ci
 npm start
 ```
 
-Now, the app will be accessible on http://localhost:3000/google-app .
+Now, the app will be accessible on http://localhost:3000 .
+
+### Show the Google login button
+
+The Google login button only appears on the page if the OAuth request parameters are provided. For testing, you can call the app homepage with the client ID of our sandbox OAuth app:
+
+http://localhost:3000?client_id=746318976034-e9r0hta4db0d21e56d7eh1nhi8n4kj4d.apps.googleusercontent.com
+
 
 ### Localization
 
