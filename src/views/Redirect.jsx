@@ -47,7 +47,7 @@ function Redirect(props) {
 
       <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
       		<div className="container px-5">
-      				<img src={process.env.PUBLIC_URL + '/img/Epages_Logo.png'} style={{ maxWidth: '200px' }} />
+      				<img src={process.env.PUBLIC_URL + '/img/Epages_Logo.png'} style={{ maxWidth: '200px' }} alt="ePages Logo" />
       		</div>
       </nav>
 

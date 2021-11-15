@@ -11,8 +11,8 @@ function Homepage(props) {
     
     <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div className="container px-5">
-            <a href="#">
-              <img src={process.env.PUBLIC_URL + '/img/Epages_Logo.png'} style={{ maxWidth: '200px' }} />
+            <a href={ process.env.PUBLIC_URL }>
+              <img src={ process.env.PUBLIC_URL + '/img/Epages_Logo.png' } style={{ maxWidth: '200px' }} alt="ePages Logo" />
             </a>
           
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,13 +70,13 @@ function Homepage(props) {
                   <div className="container-fluid p-0">
                     <div className="row no-gutters popup-gallery">
                       <div className="col-lg-4 col-sm-2">
-                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/setup_de.png'} height="200px" />
+                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/setup_de.png'} height="200px" alt="Screenshot of setup tab" />
                       </div>
                       <div className="col-lg-4 col-sm-2">
-                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/productfeed_de.png'} height="200px" />
+                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/productfeed_de.png'} height="200px" alt="Screenshot of product feed tab" />
                       </div>
                       <div className="col-lg-4 col-sm-2">
-                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/campaign_de.png'} height="200px" />
+                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/campaign_de.png'} height="200px" alt="Screenshot of campaigns tab" />
                       </div>
                     </div>
                   </div>
@@ -189,7 +189,7 @@ function Homepage(props) {
                   </p>
               </div>
               <div className="col-sm-8 col-md-6">
-                  <img src={process.env.PUBLIC_URL + '/img/gss-concept.png'} />
+                  <img src={process.env.PUBLIC_URL + '/img/gss-concept.png'} alt="Google Smart Shopping concept" />
               </div>
               
           </div>

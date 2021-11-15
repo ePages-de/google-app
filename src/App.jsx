@@ -96,23 +96,6 @@ function _defaultAuthRequestParams(clientId) {
   return params;
 }
 
-function _oauthResponseParams() {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const code = urlParams.get("code");
-  if (code) {
-    return urlParams;
-  }
-}
-
-function _isRequestComingFromAuthorizationServer() {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const authorizationCode = urlParams.get("code");
-  
-  return authorizationCode != null;
-}
-
 function _baseUrl() {
   return window.location.href.replace(/\/\?.*/g, '');
 }
