@@ -39,10 +39,10 @@ function App() {
   const urlParams = new URLSearchParams(window.location.search);
   
   if (locationHash === "#/terms-of-use") {
-    return(<LegalContent filename={ i18n.t('legalContent.termsOfUse', '#legal') }/>);
+    return(<LegalContent filename={ i18n.t('legalContent.termsOfUse') }/>);
   }
   if (locationHash === "#/privacy-notice") {
-    return(<LegalContent filename={ i18n.t('legalContent.privacyNotice', '#legal') }/>);
+    return(<LegalContent filename={ i18n.t('legalContent.privacyNotice') }/>);
   }
   
   if (urlParams.get("code")) {
