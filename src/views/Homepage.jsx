@@ -1,6 +1,5 @@
-import './styles.css';
-import './tiles.css';
-import './custom.css';
+import './NewAgeTheme.css';
+import './Homepage.css';
 import i18n from 'i18next';
 import GoogleLoginButton from '../components/GoogleLoginButton';
 
