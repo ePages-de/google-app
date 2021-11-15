@@ -2,6 +2,8 @@ import './Redirect.css';
 import { decodeState } from '../utils/state.js';
 import i18n from 'i18next';
 
+const secondsUntilAutoRedirect = 3;
+
 function Redirect(props) {
   
   const oauthResponseParams = props.oauthResponseParams;
@@ -24,8 +26,8 @@ function Redirect(props) {
   // TODO: Consider if we should test whether systemRedirectUri already contains a '?'.
   const returnUrl = state.systemRedirectUri + '&' + redirectParams.toString();
   
-  console.log("return url: " + returnUrl);
-  
+  scheduleAutoRedirect(returnUrl);
+    
   return (
     <div className="App">
 
@@ -72,6 +74,12 @@ function Redirect(props) {
   );
 }
 
+function scheduleAutoRedirect(returnUrl) {
+  setTimeout(function() {
+    window.location.replace(returnUrl);
+  }, secondsUntilAutoRedirect * 1000);
+}
+
 function TokenGenerationSnippet(props) {
   const baseUrl = window.location.href.replace(/\/\?.*/g, '');
   const curlSnippet =  `curl -X POST \\
@@ -87,15 +95,11 @@ function TokenGenerationSnippet(props) {
   return (
     <div className="App">
       <h1>Authentication successful</h1>
-      <textarea id="w3review" name="w3review" rows="10" cols="100">
+      <textarea rows="10" cols="100">
         { curlSnippet }
       </textarea>
     </div>
   );
-}
-
-function _buildTokenGenerationSnippet(oauthCode) {
-
 }
 
 export default Redirect;
