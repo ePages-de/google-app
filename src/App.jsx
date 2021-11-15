@@ -1,5 +1,6 @@
 import Homepage from './views/Homepage';
 import Redirect from './views/Redirect';
+import LegalContent from './views/LegalContent';
 import './App.css';
 import i18n from 'i18next';
 import { initReactI18next } from "react-i18next";
@@ -34,7 +35,15 @@ function App() {
     })
   ;
   
+  const locationHash = window.location.hash;
   const urlParams = new URLSearchParams(window.location.search);
+  
+  if (locationHash === "#/terms-of-use") {
+    return(<LegalContent filename={ i18n.t('legalContent.termsOfUse') }/>);
+  }
+  if (locationHash === "#/privacy-notice") {
+    return(<LegalContent filename={ i18n.t('legalContent.privacyNotice') }/>);
+  }
   
   if (urlParams.get("code")) {
     return (

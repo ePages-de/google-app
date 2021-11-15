@@ -111,5 +111,9 @@
     "googleLoginButton": {
       "label": "Sign in with Google"
     }
+  },
+  "legalContent": {
+    "privacyNotice": "privacy-notice_en.pdf",
+    "termsOfUse": "terms-of-use_en.pdf"
   }
 }

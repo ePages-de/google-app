@@ -36,6 +36,10 @@ http://localhost:3000?client_id=746318976034-e9r0hta4db0d21e56d7eh1nhi8n4kj4d.ap
 { i18n.t('views.homepage.navbar.concept.label') }
 ```
 
+```jsx
+<img src={process.env.PUBLIC_URL + '/img/Epages_Logo.png'} style={{ maxWidth: '200px' }} />
+```
+
 ## Deployment
 
 ### Render release files
