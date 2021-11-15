@@ -60,7 +60,7 @@ function Redirect(props) {
                           { i18n.t('views.callback.heading.label') }
                         </h1>
                         
-                        <Countdown seconds={ 3 } />
+                        <Countdown seconds={ secondsUntilAutoRedirect } />
                         <p>
                           <a href={ returnUrl }>
                             <button type="button" className="btn btn-primary">
@@ -91,7 +91,7 @@ function Countdown(props) {
   const timeLeft = useCountDown(props.seconds);
   return (
     <p className="lead fw-normal text-muted mb-5">
-    { timeLeft + " " + i18n.t('views.callback.redirectionMessage.label') }
+    { i18n.t('views.callback.redirectionMessage.label', {count: timeLeft}) }
   </p>
   );
 }
