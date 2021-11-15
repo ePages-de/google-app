@@ -120,7 +120,7 @@ function TokenGenerationSnippet(props) {
 
 function scheduleAutoRedirect(returnUrl) {
   setTimeout(function() {
-    // window.location.replace(returnUrl);
+    window.location.replace(returnUrl);
   }, secondsUntilAutoRedirect * 1000);
 }
 
