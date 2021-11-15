@@ -1,8 +1,22 @@
 import './Redirect.css';
 import { decodeState } from '../utils/state.js';
 import i18n from 'i18next';
+import { useEffect, useState } from 'react';
 
 const secondsUntilAutoRedirect = 3;
+
+const useCountDown = (start) => {
+  const [counter, setCounter] = useState(start);
+  useEffect(() => {
+    if (counter === 0) {
+      return;
+    }
+    setTimeout(() => {
+      setCounter(counter - 1);
+    }, 1000);
+  }, [counter]);
+  return counter;
+};
 
 function Redirect(props) {
   
@@ -45,9 +59,8 @@ function Redirect(props) {
       									<h1 className="display-4 lh-4 mb-6">
                           { i18n.t('views.callback.heading.label') }
                         </h1>
-      									<p className="lead fw-normal text-muted mb-5">
-      										{ i18n.t('views.callback.redirectionMessage.label') }
-      									</p>
+                        
+                        <Countdown seconds={ 3 } />
                         <p>
                           <a href={ returnUrl }>
                             <button type="button" className="btn btn-primary">
@@ -74,10 +87,13 @@ function Redirect(props) {
   );
 }
 
-function scheduleAutoRedirect(returnUrl) {
-  setTimeout(function() {
-    window.location.replace(returnUrl);
-  }, secondsUntilAutoRedirect * 1000);
+function Countdown(props) {
+  const timeLeft = useCountDown(props.seconds);
+  return (
+    <p className="lead fw-normal text-muted mb-5">
+    { timeLeft + " " + i18n.t('views.callback.redirectionMessage.label') }
+  </p>
+  );
 }
 
 function TokenGenerationSnippet(props) {
@@ -100,6 +116,12 @@ function TokenGenerationSnippet(props) {
       </textarea>
     </div>
   );
+}
+
+function scheduleAutoRedirect(returnUrl) {
+  setTimeout(function() {
+    // window.location.replace(returnUrl);
+  }, secondsUntilAutoRedirect * 1000);
 }
 
 export default Redirect;
