@@ -1,115 +1,115 @@
 {
-	"views": {
-		"homepage": {
-			"navbar": {
-				"features": {
-					"label": "Features"
-				},
-				"concept": {
-					"label": "Concept"
-				},
-				"legal": {
-					"label": "Legal"
-				}
-			},
-			"tagline": {
-				"label": "With ePages' Google Smart Shopping integration you can create ads for the products in your online shop with minimal effort. Connect your Google accounts, upload your products, and create a campaign – done."
-			},
-			"concept": {
-				"heading": {
-					"label": "Concept"
-				},
-				"description": {
-					"label": "ePages is managing your Google Merchant Center and Google Ads accounts on your behalf. Your products are uploaded to the Merchant Center. The Merchant Center account gets linked with the Ads account. In the Ads account campaigns get created and reports get fetched, so that you need nothing to do in the Ads account but setting up your billing information. After the creation of a Smart Shopping Campaign, tracking information for Conversion Actions and Remarketing Tags will be sent from your shop to Google."
-				}
-			},
-			"feature1": {
-				"heading": {
-					"label": "Google Merchant Center"
-				},
-				"description": {
-					"label": "Connect your shop with an already existing Google Merchant Center account or create a new account directly from within the shop."
-				}
-			},
-			"feature2": {
-				"heading": {
-					"label": "Product upload"
-				},
-				"description": {
-					"label": "Automatically upload and synchronise the products in your shop with the Google Merchant Center, using the FTP upload."
-				}
-			},
-			"feature3": {
-				"heading": {
-					"label": "Google Ads"
-				},
-				"description": {
-					"label": "Create a new Google Ads account, directly from within your shop administration."
-				}
-			},
-			"feature4": {
-				"heading": {
-					"label": "Smart Shopping Campaigns"
-				},
-				"description": {
-					"label": "Create ad campaigns with showcase your products to millions of shoppers across Google Search, Shopping, Gmail, YouTube, and the Display Network."
-				}
-			},
-			"feature5": {
-				"heading": {
-					"label": "Conversion tracking"
-				},
-				"description": {
-					"label": "When someone follows an ad and then purchases something, we will keep track of it and send this information to Google Ads."
-				}
-			},
-			"feature6": {
-				"heading": {
-					"label": "Campaign performance reports"
-				},
-				"description": {
-					"label": "You will have an overview over the costs and benefits of your Smart Shopping Campaigns directly in your shop administration."
-				}
-			},
-			"legal": {
-				"heading": {
-					"label": "Legal content"
-				},
-				"downloadHint": {
-					"label": "(Rechtsklick zum Herunterladen)"
-				},
-				"privacyNotice": {
-					"label": "Privacy notice"
-				},
-				"termsOfUse": {
-					"label": "Terms of use"
-				},
-				"copyrightNotice": {
-					"label": "ePages GmbH 2021. All rights reserved."
-				},
-				"imprint": {
-					"label": "Imprint"
-				},
-				"imprintLink": {
-					"label": "https://epages.com/en/legal-notice"
-				}
-			}
-		},
-		"callback": {
-			"heading": {
-				"label": "Login successful"
-			},
-			"redirectionMessage": {
-				"label": "In 5 seconds, you will be automatically redirected into your shop, to finish the installation of the Google app."
-			},
-			"redirectNowButton": {
-				"label": "Return now"
-			}
-		}
-	},
-	"components": {
-		"googleLoginButton": {
-			"label": "Aanmelden met Google"
-		}
-	}
+  "views": {
+    "homepage": {
+      "navbar": {
+        "features": {
+          "label": "Features"
+        },
+        "concept": {
+          "label": "Concept"
+        },
+        "legal": {
+          "label": "Legal"
+        }
+      },
+      "tagline": {
+        "label": "With ePages' Google Smart Shopping integration you can create ads for the products in your online shop with minimal effort. Connect your Google accounts, upload your products, and create a campaign – done."
+      },
+      "concept": {
+        "heading": {
+          "label": "Concept"
+        },
+        "description": {
+          "label": "ePages is managing your Google Merchant Center and Google Ads accounts on your behalf. Your products are uploaded to the Merchant Center. The Merchant Center account gets linked with the Ads account. In the Ads account campaigns get created and reports get fetched, so that you need nothing to do in the Ads account but setting up your billing information. After the creation of a Smart Shopping Campaign, tracking information for Conversion Actions and Remarketing Tags will be sent from your shop to Google."
+        }
+      },
+      "feature1": {
+        "heading": {
+          "label": "Google Merchant Center"
+        },
+        "description": {
+          "label": "Connect your shop with an already existing Google Merchant Center account or create a new account directly from within the shop."
+        }
+      },
+      "feature2": {
+        "heading": {
+          "label": "Product upload"
+        },
+        "description": {
+          "label": "Automatically upload and synchronise the products in your shop with the Google Merchant Center, using the FTP upload."
+        }
+      },
+      "feature3": {
+        "heading": {
+          "label": "Google Ads"
+        },
+        "description": {
+          "label": "Create a new Google Ads account, directly from within your shop administration."
+        }
+      },
+      "feature4": {
+        "heading": {
+          "label": "Smart Shopping Campaigns"
+        },
+        "description": {
+          "label": "Create ad campaigns with showcase your products to millions of shoppers across Google Search, Shopping, Gmail, YouTube, and the Display Network."
+        }
+      },
+      "feature5": {
+        "heading": {
+          "label": "Conversion tracking"
+        },
+        "description": {
+          "label": "When someone follows an ad and then purchases something, we will keep track of it and send this information to Google Ads."
+        }
+      },
+      "feature6": {
+        "heading": {
+          "label": "Campaign performance reports"
+        },
+        "description": {
+          "label": "You will have an overview over the costs and benefits of your Smart Shopping Campaigns directly in your shop administration."
+        }
+      },
+      "legal": {
+        "heading": {
+          "label": "Legal content"
+        },
+        "downloadHint": {
+          "label": "(Rechtsklick zum Herunterladen)"
+        },
+        "privacyNotice": {
+          "label": "Privacy notice"
+        },
+        "termsOfUse": {
+          "label": "Terms of use"
+        },
+        "copyrightNotice": {
+          "label": "ePages GmbH 2021. All rights reserved."
+        },
+        "imprint": {
+          "label": "Imprint"
+        },
+        "imprintLink": {
+          "label": "https://epages.com/en/legal-notice"
+        }
+      }
+    },
+    "callback": {
+      "heading": {
+        "label": "Login successful"
+      },
+      "redirectionMessage": {
+        "label": "In 5 seconds, you will be automatically redirected into your shop, to finish the installation of the Google app."
+      },
+      "redirectNowButton": {
+        "label": "Return now"
+      }
+    }
+  },
+  "components": {
+    "googleLoginButton": {
+      "label": "Sign in with Google"
+    }
+  }
 }
