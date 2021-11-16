@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/google-app/static/css/main.ed5d69b7.chunk.css",
-    "main.js": "/google-app/static/js/main.f4749145.chunk.js",
-    "main.js.map": "/google-app/static/js/main.f4749145.chunk.js.map",
-    "runtime-main.js": "/google-app/static/js/runtime-main.d7eaba8e.js",
-    "runtime-main.js.map": "/google-app/static/js/runtime-main.d7eaba8e.js.map",
-    "static/js/2.20138aec.chunk.js": "/google-app/static/js/2.20138aec.chunk.js",
-    "static/js/2.20138aec.chunk.js.map": "/google-app/static/js/2.20138aec.chunk.js.map",
-    "index.html": "/google-app/index.html",
-    "static/css/main.ed5d69b7.chunk.css.map": "/google-app/static/css/main.ed5d69b7.chunk.css.map",
-    "static/js/2.20138aec.chunk.js.LICENSE.txt": "/google-app/static/js/2.20138aec.chunk.js.LICENSE.txt",
-    "static/media/btn_google_light_normal_ios.9db6a818.svg": "/google-app/static/media/btn_google_light_normal_ios.9db6a818.svg"
+    "main.css": "/static/css/main.ed5d69b7.chunk.css",
+    "main.js": "/static/js/main.22c31efc.chunk.js",
+    "main.js.map": "/static/js/main.22c31efc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4bccd9c8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4bccd9c8.js.map",
+    "static/js/2.20138aec.chunk.js": "/static/js/2.20138aec.chunk.js",
+    "static/js/2.20138aec.chunk.js.map": "/static/js/2.20138aec.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.ed5d69b7.chunk.css.map": "/static/css/main.ed5d69b7.chunk.css.map",
+    "static/js/2.20138aec.chunk.js.LICENSE.txt": "/static/js/2.20138aec.chunk.js.LICENSE.txt",
+    "static/media/btn_google_light_normal_ios.9db6a818.svg": "/static/media/btn_google_light_normal_ios.9db6a818.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d7eaba8e.js",
+    "static/js/runtime-main.4bccd9c8.js",
     "static/js/2.20138aec.chunk.js",
     "static/css/main.ed5d69b7.chunk.css",
-    "static/js/main.f4749145.chunk.js"
+    "static/js/main.22c31efc.chunk.js"
   ]
 }
