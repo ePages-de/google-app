@@ -19,7 +19,7 @@ See [support.google.com](https://support.google.com/cloud/answer/9110914#verific
 
 In the OAuth consent screen configuration we need to provide links to the app's privacy policy and the terms of use.
 
-- https://google-app.epages.com/#/privacy-policy
+- https://google-app.epages.com/#/privacy-notice
 - https://google-app.epages.com/#/terms-of-use
 
 ![App domain config](./docs/app-domain-config.png)
