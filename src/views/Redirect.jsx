@@ -125,7 +125,6 @@ function _buildReturnUrl(oauthResponseParams) {
 }
 
 function _scheduleAutoRedirect(returnUrl) {
-  console.log("Return URL: " + returnUrl);
   setTimeout(function() {
     window.location.replace(returnUrl);
   }, secondsUntilAutoRedirect * 1000);

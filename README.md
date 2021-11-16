@@ -1,6 +1,6 @@
 # Google App
 
-This **public** repository hosts the app home page for the ePages integration with Google Smart Shopping.
+This <ins>**public**</ins> repository hosts the app home page for the ePages integration with Google Smart Shopping.
 
 ## Features
 
