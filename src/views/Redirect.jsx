@@ -1,7 +1,9 @@
-import './Redirect.css';
-import { decodeState } from '../utils/state.js';
 import i18n from 'i18next';
 import { useEffect, useState } from 'react';
+
+import { decodeState } from '../utils/state.js';
+import './Redirect.css';
+import Footer from '../components/Footer';
 
 const secondsUntilAutoRedirect = 3;
 
@@ -74,15 +76,9 @@ function Redirect(props) {
       		</div>
       </header>
       
-      <footer className="fixed bg-black text-center py-5">
-        <div className="container px-5">
-            <div className="text-white-50 small">
-                <div className="mb-2">{ i18n.t('views.homepage.legal.copyrightNotice.label') }</div>
-                <a href={ i18n.t('views.homepage.legal.imprintLink.label') }>{ i18n.t('views.homepage.legal.imprint.label') }</a>
-            </div>
-        </div>
-      </footer> 
-
+      <div className="fixedFooter">
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -1,11 +1,11 @@
+import i18n from 'i18next';
+
 import './NewAgeTheme.css';
 import './Homepage.css';
-import i18n from 'i18next';
+import Footer from '../components/Footer';
 import GoogleLoginButton from '../components/GoogleLoginButton';
 
-
 function Homepage(props) {
-  
   return (
     <div className="App">
     
@@ -237,14 +237,7 @@ function Homepage(props) {
         
     </section>
     
-    <footer className="bg-black text-center py-5">
-      <div className="container px-5">
-          <div className="text-white-50 small">
-              <div className="mb-2">{ i18n.t('views.homepage.legal.copyrightNotice.label') }</div>
-              <a href={ i18n.t('views.homepage.legal.imprintLink.label') }>{ i18n.t('views.homepage.legal.imprint.label') }</a>
-          </div>
-      </div>
-    </footer>
+    <Footer />
     
     </div>
   );
