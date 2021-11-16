@@ -74,7 +74,7 @@ function Redirect(props) {
       		</div>
       </header>
       
-      <footer className="bg-black text-center py-5">
+      <footer className="fixed bg-black text-center py-5">
         <div className="container px-5">
             <div className="text-white-50 small">
                 <div className="mb-2">{ i18n.t('views.homepage.legal.copyrightNotice.label') }</div>
