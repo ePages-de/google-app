@@ -14,14 +14,22 @@ For the OAuth app verification we need to fulfil the following requirements:
 
 ## Development
 
+### Dependencies
+
+To work on the Google app homepage, you need to have the current [LTS version of NodeJS](https://nodejs.org/en/download/) installed on your laptop.
+
 ### Start app
 
+To start the development server, clone the repository, install the dependencies, and then call the `start` task.
+
 ```
-npm ci
-npm start
+$ git clone git@github.com:ePages-de/google-app.git
+$ cd google-app
+$ npm install
+$ npm start
 ```
 
-Now, the app will be accessible on http://localhost:3000 .
+Then, the app will be accessible at http://localhost:3000 .
 
 ### Show the Google login button
 
