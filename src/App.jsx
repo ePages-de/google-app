@@ -27,13 +27,7 @@ const resources = {
 };
 
 function App() {
-  i18n
-    .use(LanguageDetector)
-    .use(initReactI18next)
-    .init({
-      resources
-    })
-  ;
+  _initInternationalization();
   
   const locationHash = window.location.hash;
   const urlParams = new URLSearchParams(window.location.search);
@@ -61,6 +55,16 @@ function App() {
       <Homepage oauthRequestParams={ _oauthRequestParams() } />
     );
   }
+}
+
+function _initInternationalization() {
+  i18n
+    .use(LanguageDetector)
+    .use(initReactI18next)
+    .init({
+      resources
+    })
+  ;
 }
 
 function _oauthRequestParams() {
