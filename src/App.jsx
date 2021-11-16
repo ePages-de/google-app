@@ -11,21 +11,6 @@ import translationNL from './locales/nl.json';
 import LanguageDetector from './utils/lang.js';
 import { encodeState } from './utils/state.js';
 
-const resources = {
-  de: {
-    translation: translationDE
-  },
-  en: {
-    translation: translationEN
-  },
-  es: {
-    translation: translationES
-  },
-  nl: {
-    translation: translationNL
-  }
-};
-
 function App() {
   _initInternationalization();
   
@@ -35,6 +20,7 @@ function App() {
   if (locationHash === "#/terms-of-use") {
     return(<LegalContent filename={ i18n.t('legalContent.termsOfUse') }/>);
   }
+  
   if (locationHash === "#/privacy-notice") {
     return(<LegalContent filename={ i18n.t('legalContent.privacyNotice') }/>);
   }
@@ -45,19 +31,36 @@ function App() {
         <Redirect oauthResponseParams={ urlParams } />
       </div>
     );
-  } else if (urlParams.get("client_id") && !urlParams.get("redirect_uri")) {
+  }
+  
+  if (urlParams.get("client_id") && !urlParams.get("redirect_uri")) {
     const clientId = urlParams.get("client_id");
     return (
       <Homepage oauthRequestParams={ _defaultAuthRequestParams(clientId) } />
     );
-  } else {
-    return (
-      <Homepage oauthRequestParams={ _oauthRequestParams() } />
-    );
-  }
+  } 
+  
+  return (
+    <Homepage oauthRequestParams={ _oauthRequestParams() } />
+  );
 }
 
 function _initInternationalization() {
+  const resources = {
+    de: {
+      translation: translationDE
+    },
+    en: {
+      translation: translationEN
+    },
+    es: {
+      translation: translationES
+    },
+    nl: {
+      translation: translationNL
+    }
+  };
+  
   i18n
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -91,7 +94,6 @@ function _defaultAuthRequestParams(clientId) {
   params.set('access_type', 'offline');
   params.set('scope', 'https://www.googleapis.com/auth/content https://www.googleapis.com/auth/siteverification https://www.googleapis.com/auth/adwords');
   params.set('prompt', 'consent');
-  params.set('flowName', 'GeneralOAuthFlow');
   
   return params;
 }

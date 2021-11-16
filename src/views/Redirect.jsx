@@ -21,28 +21,15 @@ const useCountDown = (start) => {
 };
 
 function Redirect(props) {
-  
   const oauthResponseParams = props.oauthResponseParams;
-  
-  const oauthCode = oauthResponseParams.get("code");
-  const state = decodeState(oauthResponseParams.get("state"));
-  
-  // If the callback doesn't have a state, then OAuth request wasn't initiated
-  // by the MBO but by a developer who wants to manually generate a token.
-  if (!state.shopRedirectUri) {
-    return (<TokenGenerationSnippet oauthCode={ oauthCode } />);
+
+  if (_isOauthResponseForManualTokenGeneration(oauthResponseParams.get("state"))) {
+    return (<TokenGenerationSnippet oauthCode={ oauthResponseParams.get("code") } />);
   }
   
-  var redirectParams = new URLSearchParams();
-  redirectParams.set('state', state.shopRedirectUri);
-  redirectParams.set('code', oauthResponseParams.get('code'));
-  redirectParams.set('scope', oauthResponseParams.get('scope'));
-  redirectParams.set('prompt', oauthResponseParams.get('prompt'));
+  const returnUrl = _buildReturnUrl(oauthResponseParams);
   
-  // TODO: Consider if we should test whether systemRedirectUri already contains a '?'.
-  const returnUrl = state.systemRedirectUri + '&' + redirectParams.toString();
-  
-  scheduleAutoRedirect(returnUrl);
+  _scheduleAutoRedirect(returnUrl);
     
   return (
     <div className="App">
@@ -114,7 +101,31 @@ function TokenGenerationSnippet(props) {
   );
 }
 
-function scheduleAutoRedirect(returnUrl) {
+function _isOauthResponseForManualTokenGeneration(state) {
+  const decodedState = decodeState(state);
+  return !('shopRedirectUri' in decodedState);
+}
+
+function _buildReturnUrl(oauthResponseParams) {
+  const oauthCode = oauthResponseParams.get("code");
+  const state = decodeState(oauthResponseParams.get("state"));
+  
+  var redirectParams = new URLSearchParams();
+  redirectParams.set('state', state.shopRedirectUri);
+  redirectParams.set('code', oauthResponseParams.get('code'));
+  redirectParams.set('scope', oauthResponseParams.get('scope'));
+  redirectParams.set('prompt', oauthResponseParams.get('prompt'));
+  
+  
+  if (state.systemRedirectUri.includes('?')) {
+    return state.systemRedirectUri + '&' + redirectParams.toString();
+  } else {
+    return state.systemRedirectUri + '?' + redirectParams.toString();
+  }
+}
+
+function _scheduleAutoRedirect(returnUrl) {
+  console.log("Return URL: " + returnUrl);
   setTimeout(function() {
     window.location.replace(returnUrl);
   }, secondsUntilAutoRedirect * 1000);

@@ -1,6 +1,6 @@
 # Google App
 
-This repository hosts the app home page for the ePages integration with Google Smart Shopping.
+This **public** repository hosts the app home page for the ePages integration with Google Smart Shopping.
 
 ## Features
 
@@ -73,18 +73,21 @@ $ npm start
 
 Then, the app will be accessible at http://localhost:3000 .
 
-### Show the Google login button
-
-The Google login button only appears on the page if the OAuth request parameters are provided. For testing, you can call the app homepage with the client ID of our sandbox OAuth app:
-
-http://localhost:3000?client_id=746318976034-e9r0hta4db0d21e56d7eh1nhi8n4kj4d.apps.googleusercontent.com
-
-
 ### Localization
+
+The app homepage uses [i18next](https://www.i18next.com/) for the internationalization. The translation keys are defined in [`src/locales`](./src/locales). They can be used in JSX code like this:
+
+```jsx
+import i18n from 'i18next';
+```
 
 ```jsx
 { i18n.t('views.homepage.navbar.concept.label') }
 ```
+
+### Resource links
+
+In JavaScript code islands in JSX, you can use `process.env.PUBLIC_URL` to reference the base URL of the app homepage.
 
 ```jsx
 <img src={process.env.PUBLIC_URL + '/img/Epages_Logo.png'} style={{ maxWidth: '200px' }} />
@@ -94,11 +97,37 @@ http://localhost:3000?client_id=746318976034-e9r0hta4db0d21e56d7eh1nhi8n4kj4d.ap
 
 ### OAuth start
 
+The Google login button only appears on the homepage if the OAuth request parameters are provided. For testing, you can call the app homepage with the client ID of our sandbox OAuth app:
+
+http://localhost:3000?client_id=746318976034-e9r0hta4db0d21e56d7eh1nhi8n4kj4d.apps.googleusercontent.com
+
 ### OAuth end
+
+The OAuth end page is rendered if the homepage was called with the OAuth response parameters.
+
+For testing the redirection page, you can open this URL in a browser:
+
+http://localhost:3000/?state=eyJzeXN0ZW1SZWRpcmVjdFVyaSI6Imh0dHBzOi8vc2hvcHMuZXhhbXBsZS1yZXNlbGxlci5jb20iLCJzaG9wUmVkaXJlY3RVcmkiOiJodHRwczovL3Nob3AuZXhhbXBsZS5jb20ifQ%3D%3D&code=xxxxx&scope=email%20https://www.googleapis.com/auth/content%20https://www.googleapis.com/auth/siteverification%20https://www.googleapis.com/auth/adwords%20openid%20https://www.googleapis.com/auth/userinfo.email&authuser=1&prompt=consent
+
+For testing the cURL snippet generation, you can call the app homepage with this example request:
+
+http://localhost:3000/?code=xxxx&scope=https://www.googleapis.com/auth/content%20https://www.googleapis.com/auth/siteverification%20https://www.googleapis.com/auth/adwords
 
 ## Deployment
 
-### Render release files
+### Publish to GitHub Pages
+
+Every commit in the repository triggeres the "Build & deploy" action defined in [`gh-pages.yaml`](.github/workflows/gh-pages.yaml).
+
+If you want to trigger the deployment to GitHub Pages manually, you could do so by calling the `deploy` task.
+
+```
+npm run deploy
+```
+
+### Compile release files
+
+If you want to deploy the homepage somewhere else, you can compile the release files with the `build` task and then copy the `/build` directory there.
 
 ```
 $ npm ci
@@ -112,17 +141,6 @@ drwxrwxr-x 2 jdoe jdoe 4096 Nov 12 17:55 legal-content
 -rw-rw-r-- 1 jdoe jdoe   67 Nov 12 17:55 robots.txt
 drwxrwxr-x 5 jdoe jdoe 4096 Nov 12 17:55 static
 ```
- 
-### Publish to GitHub pages
-
-```
-npm run deploy
-```
-
-## References
-
-- https://stackoverflow.com/questions/59793437/example-of-an-oauth-homepage-for-google
-- https://support.google.com/cloud/answer/9110914?hl=en
 
 ## Copyright
 
