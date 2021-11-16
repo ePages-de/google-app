@@ -54,15 +54,11 @@ function App() {
   } else if (urlParams.get("client_id") && !urlParams.get("redirect_uri")) {
     const clientId = urlParams.get("client_id");
     return (
-      <div className="App">
-        <Homepage oauthRequestParams={ _defaultAuthRequestParams(clientId) } />
-      </div>    
+      <Homepage oauthRequestParams={ _defaultAuthRequestParams(clientId) } />
     );
   } else {
     return (
-      <div className="App">
-        <Homepage oauthRequestParams={ _oauthRequestParams() } />
-      </div>
+      <Homepage oauthRequestParams={ _oauthRequestParams() } />
     );
   }
 }

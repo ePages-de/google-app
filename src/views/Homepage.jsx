@@ -8,7 +8,21 @@ import GoogleLoginButton from '../components/GoogleLoginButton';
 function Homepage(props) {
   return (
     <div className="App">
-    
+      <Header />
+      
+      <Teaser oauthRequestParams={ props.oauthRequestParams } />
+      <Screenshots />
+      <Features />
+      <DataUsage />
+      <LegalDocuments />
+      
+      <Footer />
+    </div>
+  );
+}
+
+function Header() {
+  return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div className="container px-5">
             <a href={ process.env.PUBLIC_URL }>
@@ -40,29 +54,34 @@ function Homepage(props) {
             </div>
         </div>
     </nav>
-    
-    <header className="masthead">
-        <div className="container px-5">
-            <div className="row gx-5 align-items-center">
-              <div className="col-lg-12">
-                  
-                  <div className="mb-7 mb-lg-0 text-center text-lg-start">
-                      <h1 className="display-4 lh-4 mb-6">Google Smart Shopping App</h1>
-                      <p className="lead fw-normal text-muted mb-5">
-                        { i18n.t('views.homepage.tagline.label') }
-                      </p>
-                      {
-                        props.oauthRequestParams &&
-                          <GoogleLoginButton oauthRequestParams={props.oauthRequestParams} />
-                      }
-                      
-                  </div>
-              </div>
+  );
+}
 
+function Teaser(props) {
+  return (
+    <header className="masthead">
+      <div className="container px-5">
+          <div className="row gx-5 align-items-center">
+            <div className="col-lg-12">
+                <div className="mb-7 mb-lg-0 text-center text-lg-start">
+                    <h1 className="display-4 lh-4 mb-6">Google Smart Shopping App</h1>
+                    <p className="lead fw-normal text-muted mb-5">
+                      { i18n.t('views.homepage.tagline.label') }
+                    </p>
+                    {
+                      props.oauthRequestParams &&
+                        <GoogleLoginButton oauthRequestParams={props.oauthRequestParams} />
+                    }
+                </div>
             </div>
+          </div>
         </div>
-    </header>
-    
+      </header>
+  );
+}
+
+function Screenshots() {
+  return (
     <aside className="text-center bg-gradient-primary-to-secondary">
         <div className="container px-5">
             <div className="row gx-5 justify-content-center">
@@ -84,8 +103,11 @@ function Homepage(props) {
             </div>
         </div>
     </aside>
-    
-    
+  );
+}
+
+function Features() {
+  return (
     <section id="features">
         <div className="container px-5">
           <div className="row gx-5 align-items-center">
@@ -174,12 +196,14 @@ function Homepage(props) {
           </div>
         </div>
     </section>
-    
-    
+  );
+}
+
+function DataUsage() {
+  return (
     <section id="concept" className="bg-light">
         <div className="container px-5">
           <div className="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-            
               <div className="col-12 col-lg-5">
                   <h2 className="display-4 lh-1 mb-4">
                     { i18n.t('views.homepage.concept.heading.label') }
@@ -191,13 +215,14 @@ function Homepage(props) {
               <div className="col-sm-8 col-md-6">
                   <img src={process.env.PUBLIC_URL + '/img/gss-concept.png'} alt="Google Smart Shopping concept" />
               </div>
-              
           </div>
-
         </div>
     </section>
-    
-    
+  );
+}
+
+function LegalDocuments() {
+  return (
     <section id="legal">
       <div className="container px-5">
           <div className="row gx-5 align-items-center">
@@ -234,12 +259,7 @@ function Homepage(props) {
             </div>
           </div>
       </div>
-        
     </section>
-    
-    <Footer />
-    
-    </div>
   );
 }
 
