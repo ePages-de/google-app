@@ -100,7 +100,8 @@
         "label": "Login successful"
       },
       "redirectionMessage": {
-        "label": "In 5 seconds, you will be automatically redirected into your shop, to finish the installation of the Google app."
+        "label_one": "In 1 second, you will be automatically redirected into your shop, to finish the installation of the Google app.",
+        "label_other": "In {{count}} seconds, you will be automatically redirected into your shop, to finish the installation of the Google app."
       },
       "redirectNowButton": {
         "label": "Return now"

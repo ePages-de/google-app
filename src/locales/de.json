@@ -103,7 +103,6 @@
         "label_one": "Sie werden in 1 Sekunde automatisch zurück in Ihren Shop umgeleitet, um die Installation der Google App abzuschließen.",
         "label_other": "Sie werden in {{count}} Sekunden automatisch zurück in Ihren Shop umgeleitet, um die Installation der Google App abzuschließen."
       },
-      
       "redirectNowButton": {
         "label": "Jetzt zurückkehren"
       }
