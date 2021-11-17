@@ -1,9 +1,11 @@
+import React from 'react';
 import i18n from 'i18next';
 import { useEffect, useState } from 'react';
 
 import { decodeState } from '../utils/state.js';
 import './Redirect.css';
 import Footer from '../components/Footer';
+import PropTypes from 'prop-types';
 
 const secondsUntilAutoRedirect = 3;
 
@@ -35,17 +37,17 @@ function Redirect(props) {
     <div className="App">
 
       <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-      		<div className="container px-5">
-      				<img src={process.env.PUBLIC_URL + '/img/Epages_Logo.png'} style={{ maxWidth: '200px' }} alt="ePages Logo" />
-      		</div>
+          <div className="container px-5">
+              <img src={process.env.PUBLIC_URL + '/img/Epages_Logo.png'} style={{ maxWidth: '200px' }} alt="ePages Logo" />
+          </div>
       </nav>
 
       <header className="masthead">
-      		<div className="container px-5">
-      				<div className="row gx-5 align-items-center">
-      					<div className="col-lg-12">
-      							<div className="mb-7 mb-lg-0 text-center text-lg-start">
-      									<h1 className="display-4 lh-4 mb-6">
+          <div className="container px-5">
+              <div className="row gx-5 align-items-center">
+                <div className="col-lg-12">
+                    <div className="mb-7 mb-lg-0 text-center text-lg-start">
+                        <h1 className="display-4 lh-4 mb-6">
                           { i18n.t('views.callback.heading.label') }
                         </h1>
                         
@@ -57,10 +59,10 @@ function Redirect(props) {
                             </button>
                           </a>
                         </p>
-      							</div>
-      					</div>
-      				</div>
-      		</div>
+                    </div>
+                </div>
+              </div>
+          </div>
       </header>
       
       <div className="fixedFooter">
@@ -70,6 +72,10 @@ function Redirect(props) {
   );
 }
 
+Redirect.propTypes = {
+  oauthResponseParams: PropTypes.func.isRequired,
+};
+
 function Countdown(props) {
   const timeLeft = useCountDown(props.seconds);
   return (
@@ -78,6 +84,10 @@ function Countdown(props) {
   </p>
   );
 }
+
+Countdown.propTypes = {
+  seconds: PropTypes.func.isRequired,
+};
 
 function TokenGenerationSnippet(props) {
   const baseUrl = window.location.href.replace(/\/\?.*/g, '');
@@ -100,6 +110,10 @@ function TokenGenerationSnippet(props) {
     </div>
   );
 }
+
+TokenGenerationSnippet.propTypes = {
+  oauthCode: PropTypes.func.isRequired,
+};
 
 function _isOauthResponseForManualTokenGeneration(state) {
   const decodedState = decodeState(state);

@@ -93,6 +93,14 @@ In JavaScript code islands in JSX, you can use `process.env.PUBLIC_URL` to refer
 <img src={process.env.PUBLIC_URL + '/img/Epages_Logo.png'} style={{ maxWidth: '200px' }} />
 ```
 
+### Linting
+
+Run the `lint` task for finding code style issues before doing a pull request.
+
+```
+npm run lint
+```
+
 ## Testing
 
 ### OAuth start

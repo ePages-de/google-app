@@ -1,4 +1,6 @@
+import React from 'react';
 import i18n from 'i18next';
+import PropTypes from 'prop-types';
 
 import './NewAgeTheme.css';
 import './Homepage.css';
@@ -20,6 +22,10 @@ function Homepage(props) {
     </div>
   );
 }
+
+Homepage.propTypes = {
+  oauthRequestParams: PropTypes.object,
+};
 
 function Header() {
   return (
@@ -79,6 +85,10 @@ function Teaser(props) {
       </header>
   );
 }
+
+Teaser.propTypes = {
+  oauthRequestParams: PropTypes.object,
+};
 
 function Screenshots() {
   return (

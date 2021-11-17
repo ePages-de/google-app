@@ -1,6 +1,7 @@
+import React from 'react';
 import i18n from 'i18next';
 
-function Footer(props) {
+function Footer() {
   return (
     <footer className="bg-black text-center py-5">
       <div className="container px-5">

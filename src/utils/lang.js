@@ -24,11 +24,11 @@ var getFirstBrowserLanguage = function () {
 
 const LanguageDetector = {
 	type: 'languageDetector',
-	init: function(services, detectorOptions, i18nextOptions) {},
+	init: function() {},
 	detect: function() {
 		return getFirstBrowserLanguage();
 	},
-	cacheUserLanguage: function(lng) {} 
+	cacheUserLanguage: function() {} 
 };
 
 export default LanguageDetector;

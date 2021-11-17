@@ -1,14 +1,16 @@
+import React from 'react';
 import i18n from 'i18next';
+import PropTypes from 'prop-types';
 
 function LegalContent(props) {
-	if (props.filename) {
-		const pdfUrl = process.env.PUBLIC_URL + "/legal-content/" + props.filename;
-		window.location.replace(pdfUrl);
-    return (<div />);
-	} else {
-		return (<div><h1>404 Not Found</h1></div>);
-	}
+	const pdfUrl = process.env.PUBLIC_URL + "/legal-content/" + props.filename;
+	window.location.replace(pdfUrl);
+  return (<div />);
 }
+
+LegalContent.propTypes = {
+  filename: PropTypes.string.isRequired,
+};
 
 function TermsOfUse() {
   return (
