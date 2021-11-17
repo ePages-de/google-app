@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.ed5d69b7.chunk.css",
-    "main.js": "/static/js/main.ec24d7f0.chunk.js",
-    "main.js.map": "/static/js/main.ec24d7f0.chunk.js.map",
+    "main.js": "/static/js/main.d409208b.chunk.js",
+    "main.js.map": "/static/js/main.d409208b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4bccd9c8.js",
     "runtime-main.js.map": "/static/js/runtime-main.4bccd9c8.js.map",
-    "static/js/2.20138aec.chunk.js": "/static/js/2.20138aec.chunk.js",
-    "static/js/2.20138aec.chunk.js.map": "/static/js/2.20138aec.chunk.js.map",
+    "static/js/2.94f8ce36.chunk.js": "/static/js/2.94f8ce36.chunk.js",
+    "static/js/2.94f8ce36.chunk.js.map": "/static/js/2.94f8ce36.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.ed5d69b7.chunk.css.map": "/static/css/main.ed5d69b7.chunk.css.map",
-    "static/js/2.20138aec.chunk.js.LICENSE.txt": "/static/js/2.20138aec.chunk.js.LICENSE.txt",
+    "static/js/2.94f8ce36.chunk.js.LICENSE.txt": "/static/js/2.94f8ce36.chunk.js.LICENSE.txt",
     "static/media/btn_google_light_normal_ios.9db6a818.svg": "/static/media/btn_google_light_normal_ios.9db6a818.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4bccd9c8.js",
-    "static/js/2.20138aec.chunk.js",
+    "static/js/2.94f8ce36.chunk.js",
     "static/css/main.ed5d69b7.chunk.css",
-    "static/js/main.ec24d7f0.chunk.js"
+    "static/js/main.d409208b.chunk.js"
   ]
 }
