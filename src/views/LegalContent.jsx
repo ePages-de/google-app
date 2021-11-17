@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 function LegalContent(props) {
-	const pdfUrl = process.env.PUBLIC_URL + "/legal-content/" + props.filename;
-	window.location.replace(pdfUrl);
+  const pdfUrl = process.env.PUBLIC_URL + "/legal-content/" + props.filename;
+  window.location.replace(pdfUrl);
   return (<div />);
 }
 
