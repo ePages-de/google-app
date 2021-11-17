@@ -1,9 +1,10 @@
-import React from 'react';
-import i18n from 'i18next';
-import PropTypes from 'prop-types';
-
 import './NewAgeTheme.css';
 import './Homepage.css';
+
+import i18n from 'i18next';
+import PropTypes from 'prop-types';
+import React from 'react';
+
 import Footer from '../components/Footer';
 import GoogleLoginButton from '../components/GoogleLoginButton';
 

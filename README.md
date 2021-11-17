@@ -95,6 +95,12 @@ In JavaScript code islands in JSX, you can use `process.env.PUBLIC_URL` to refer
 
 ### Linting
 
+Run the `fix` task for cleaning up the import sort order etc.
+
+```
+npm run fix
+```
+
 Run the `lint` task for finding code style issues before doing a pull request.
 
 ```

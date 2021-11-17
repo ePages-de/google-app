@@ -1,6 +1,9 @@
 const pkg = require('./package.json')
 
 const config = {
+  plugins: [
+    "simple-import-sort"
+  ],
   extends: [
     "eslint:recommended",
     "plugin:react/recommended"
@@ -13,7 +16,9 @@ const config = {
     }
   },
   rules: {
-    "no-undef": "off"
+    "no-undef": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
   },
   settings: {
     react: {

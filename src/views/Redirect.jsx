@@ -1,11 +1,12 @@
-import React from 'react';
+import './Redirect.css';
+
 import i18n from 'i18next';
+import PropTypes from 'prop-types';
+import React from 'react';
 import { useEffect, useState } from 'react';
 
-import { decodeState } from '../utils/state.js';
-import './Redirect.css';
 import Footer from '../components/Footer';
-import PropTypes from 'prop-types';
+import { decodeState } from '../utils/state.js';
 
 const secondsUntilAutoRedirect = 3;
 

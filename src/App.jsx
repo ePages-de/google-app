@@ -1,18 +1,19 @@
-import React from 'react';
-import { HashRouter, BrowserRouter, Routes, Route, useSearchParams } from 'react-router-dom';
-import Homepage from './views/Homepage';
-import Redirect from './views/Redirect';
 import './App.css';
-import { encodeState } from './utils/state.js';
 
-import { TermsOfUse, PrivacyNotice } from './views/LegalContent';
 import i18n from 'i18next';
+import React from 'react';
 import { initReactI18next } from "react-i18next";
+import { BrowserRouter, HashRouter, Route, Routes, useSearchParams } from 'react-router-dom';
+
 import translationDE from './locales/de.json';
 import translationEN from './locales/en.json';
 import translationES from './locales/es.json';
 import translationNL from './locales/nl.json';
 import LanguageDetector from './utils/lang.js';
+import { encodeState } from './utils/state.js';
+import Homepage from './views/Homepage';
+import { PrivacyNotice,TermsOfUse } from './views/LegalContent';
+import Redirect from './views/Redirect';
 
 function App() {
   _initInternationalization();

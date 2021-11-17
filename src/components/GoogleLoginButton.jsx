@@ -1,8 +1,10 @@
-import React from 'react';
 import './GoogleLoginButton.css';
-import GoogleButtonBackground from './btn_google_light_normal_ios.svg';
+
 import i18n from 'i18next';
 import PropTypes from 'prop-types';
+import React from 'react';
+
+import GoogleButtonBackground from './btn_google_light_normal_ios.svg';
 
 const oauthBaseUrl = 'https://accounts.google.com/o/oauth2/auth';
 
