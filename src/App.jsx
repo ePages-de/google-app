@@ -1,7 +1,11 @@
+import React from 'react';
+import { Routes, Route, useSearchParams, useParams } from 'react-router-dom';
 import Homepage from './views/Homepage';
 import Redirect from './views/Redirect';
-import LegalContent from './views/LegalContent';
 import './App.css';
+import { encodeState } from './utils/state.js';
+
+import { TermsOfUse, PrivacyNotice } from './views/LegalContent';
 import i18n from 'i18next';
 import { initReactI18next } from "react-i18next";
 import translationDE from './locales/de.json';
@@ -9,21 +13,25 @@ import translationEN from './locales/en.json';
 import translationES from './locales/es.json';
 import translationNL from './locales/nl.json';
 import LanguageDetector from './utils/lang.js';
-import { encodeState } from './utils/state.js';
 
 function App() {
   _initInternationalization();
   
+  return (
+    <main>
+      <Routes>
+        <Route path='/' element={<UrlParameterRouter />}/>
+        <Route path='/terms-of-use' element={<TermsOfUse />}/>
+        <Route path='/privacy-notice' element={<PrivacyNotice />}/>
+      </Routes>
+    </main>    
+  );
+}
+
+function UrlParameterRouter() {
+
   const locationHash = window.location.hash;
   const urlParams = new URLSearchParams(window.location.search);
-  
-  if (locationHash === "#/terms-of-use") {
-    return(<LegalContent filename={ i18n.t('legalContent.termsOfUse') }/>);
-  }
-  
-  if (locationHash === "#/privacy-notice") {
-    return(<LegalContent filename={ i18n.t('legalContent.privacyNotice') }/>);
-  }
   
   if (urlParams.get("code")) {
     return (
@@ -34,9 +42,8 @@ function App() {
   }
   
   if (urlParams.get("client_id") && !urlParams.get("redirect_uri")) {
-    const clientId = urlParams.get("client_id");
     return (
-      <Homepage oauthRequestParams={ _defaultAuthRequestParams(clientId) } />
+      <Homepage oauthRequestParams={ _defaultAuthRequestParams(urlParams.get("client_id")) } />
     );
   } 
   
@@ -102,4 +109,4 @@ function _baseUrl() {
   return window.location.href.replace(/\/\?.*/g, '');
 }
 
-export default App;
+export default App
