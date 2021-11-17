@@ -107,7 +107,7 @@ The OAuth end page is rendered if the homepage was called with the OAuth respons
 
 For testing the redirection page, you can open this URL in a browser:
 
-http://localhost:3000/?state=eyJzeXN0ZW1SZWRpcmVjdFVyaSI6Imh0dHBzOi8vc2hvcHMuZXhhbXBsZS1yZXNlbGxlci5jb20iLCJzaG9wUmVkaXJlY3RVcmkiOiJodHRwczovL3Nob3AuZXhhbXBsZS5jb20ifQ%3D%3D&code=xxxxx&scope=email%20https://www.googleapis.com/auth/content%20https://www.googleapis.com/auth/siteverification%20https://www.googleapis.com/auth/adwords%20openid%20https://www.googleapis.com/auth/userinfo.email&authuser=1&prompt=consent
+http://localhost:3000?state=eyJzeXN0ZW1SZWRpcmVjdFVyaSI6Imh0dHBzOi8vc2hvcHMuZXhhbXBsZS1yZXNlbGxlci5jb20iLCJzaG9wUmVkaXJlY3RVcmkiOiJodHRwczovL3Nob3AuZXhhbXBsZS5jb20ifQ%3D%3D&code=xxxxx&scope=email%20https://www.googleapis.com/auth/content%20https://www.googleapis.com/auth/siteverification%20https://www.googleapis.com/auth/adwords%20openid%20https://www.googleapis.com/auth/userinfo.email&authuser=1&prompt=consent
 
 For testing the cURL snippet generation, you can call the app homepage with this example request:
 

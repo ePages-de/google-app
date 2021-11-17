@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, useSearchParams, useParams } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Routes, Route, useSearchParams } from 'react-router-dom';
 import Homepage from './views/Homepage';
 import Redirect from './views/Redirect';
 import './App.css';
@@ -19,36 +19,45 @@ function App() {
   
   return (
     <main>
-      <Routes>
-        <Route path='/' element={<UrlParameterRouter />}/>
-        <Route path='/terms-of-use' element={<TermsOfUse />}/>
-        <Route path='/privacy-notice' element={<PrivacyNotice />}/>
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<UrlParameterRouter />}/>
+        </Routes>
+      </BrowserRouter>
+      <HashRouter>
+        <Routes>
+          <Route exact path='/' element={<div />}/>
+          <Route path='/terms-of-use' element={<TermsOfUse />}/>
+          <Route path='/privacy-notice' element={<PrivacyNotice />}/>
+        </Routes>
+      </HashRouter>
     </main>    
   );
 }
 
 function UrlParameterRouter() {
-
-  const locationHash = window.location.hash;
-  const urlParams = new URLSearchParams(window.location.search);
+  const [searchParams] = useSearchParams();
   
-  if (urlParams.get("code")) {
+  const code = searchParams.get("code");
+  const clientId = searchParams.get("client_id");
+  const redirectUri = searchParams.get("redirect_uri");
+  
+  if (code) {
     return (
       <div className="App">
-        <Redirect oauthResponseParams={ urlParams } />
+        <Redirect oauthResponseParams={ searchParams } />
       </div>
     );
   }
   
-  if (urlParams.get("client_id") && !urlParams.get("redirect_uri")) {
+  if (clientId && !redirectUri) {
     return (
-      <Homepage oauthRequestParams={ _defaultAuthRequestParams(urlParams.get("client_id")) } />
+      <Homepage oauthRequestParams={ _defaultAuthRequestParams(searchParams) } />
     );
   } 
   
   return (
-    <Homepage oauthRequestParams={ _oauthRequestParams() } />
+    <Homepage oauthRequestParams={ _oauthRequestParams(searchParams) } />
   );
 }
 
@@ -77,10 +86,9 @@ function _initInternationalization() {
   ;
 }
 
-function _oauthRequestParams() {
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const accessType = urlParams.get("access_type");
+function _oauthRequestParams(searchParams) {
+  const urlParams = new URLSearchParams(searchParams.toString());
+  const accessType = searchParams.get("access_type");
   
   if (accessType) {
     urlParams.set('state', encodeState({
@@ -92,7 +100,8 @@ function _oauthRequestParams() {
   }
 }
 
-function _defaultAuthRequestParams(clientId) {
+function _defaultAuthRequestParams(searchParams) {
+  const clientId = searchParams.get("client_id");
   const params = new URLSearchParams();
   
   params.set('client_id', clientId);

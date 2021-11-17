@@ -107,7 +107,6 @@ function _isOauthResponseForManualTokenGeneration(state) {
 }
 
 function _buildReturnUrl(oauthResponseParams) {
-  const oauthCode = oauthResponseParams.get("code");
   const state = decodeState(oauthResponseParams.get("state"));
   
   var redirectParams = new URLSearchParams();
