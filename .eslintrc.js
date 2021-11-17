@@ -1,5 +1,3 @@
-const pkg = require('./package.json')
-
 const config = {
   plugins: [
     "simple-import-sort"

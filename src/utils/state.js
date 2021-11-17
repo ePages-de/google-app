@@ -12,4 +12,4 @@ function decodeState(encodedState) {
 	return JSON.parse(atob(encodedState));
 }
 
-export { encodeState, decodeState };
+export { decodeState, encodeState };
