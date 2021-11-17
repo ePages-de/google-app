@@ -1,5 +1,3 @@
-import './App.css';
-
 import i18n from 'i18next';
 import React from 'react';
 import { initReactI18next } from 'react-i18next';
@@ -13,7 +11,7 @@ import LanguageDetector from './utils/lang.js';
 import { encodeState } from './utils/state.js';
 import Homepage from './views/Homepage';
 import { PrivacyNotice,TermsOfUse } from './views/LegalContent';
-import Redirect from './views/Redirect';
+import ReturnPrompt from './views/ReturnPrompt';
 
 function App() {
   _initInternationalization();
@@ -46,7 +44,7 @@ function UrlParameterRouter() {
   if (code) {
     return (
       <div className="App">
-        <Redirect oauthResponseParams={ searchParams } />
+        <ReturnPrompt oauthResponseParams={ searchParams } />
       </div>
     );
   }

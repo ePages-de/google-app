@@ -25,8 +25,8 @@
     "deploy": "gh-pages -d build -r git@github.com:ePages-de/google-app.git",
     "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject",
-    "lint": "npx eslint \"**/*.{js,jsx}\"",
-    "fix": "npx eslint \"**/*.{js,jsx}\" --fix"
+    "lint": "npx eslint \"src/**/*.{js,jsx}\"",
+    "fix": "npx eslint \"src/**/*.{js,jsx}\" --fix"
   },
   "eslintConfig": {
     "extends": [

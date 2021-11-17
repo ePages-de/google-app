@@ -23,7 +23,7 @@ const useCountDown = (start) => {
   return counter;
 };
 
-function Redirect(props) {
+function ReturnPrompt(props) {
   const oauthResponseParams = props.oauthResponseParams;
 
   if (_isOauthResponseForManualTokenGeneration(oauthResponseParams.get("state"))) {
@@ -73,7 +73,7 @@ function Redirect(props) {
   );
 }
 
-Redirect.propTypes = {
+ReturnPrompt.propTypes = {
   oauthResponseParams: PropTypes.func.isRequired,
 };
 
@@ -144,4 +144,4 @@ function _scheduleAutoRedirect(returnUrl) {
   }, secondsUntilAutoRedirect * 1000);
 }
 
-export default Redirect;
+export default ReturnPrompt;
