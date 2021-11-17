@@ -115,7 +115,11 @@ function _defaultAuthRequestParams(searchParams) {
 }
 
 function _baseUrl() {
-  return window.location.href.replace(/\/\?.*/g, '');
+  if (typeof window !== 'undefined') {
+    return window.location.href.replace(/\/\?.*/g, '');
+  } else {
+    return process.env.PUBLIC_URL;
+  }
 }
 
 export default App
