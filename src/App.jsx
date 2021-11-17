@@ -2,7 +2,7 @@ import './App.css';
 
 import i18n from 'i18next';
 import React from 'react';
-import { initReactI18next } from "react-i18next";
+import { initReactI18next } from 'react-i18next';
 import { BrowserRouter, HashRouter, Route, Routes, useSearchParams } from 'react-router-dom';
 
 import translationDE from './locales/de.json';
@@ -116,11 +116,7 @@ function _defaultAuthRequestParams(searchParams) {
 }
 
 function _baseUrl() {
-  if (typeof window !== 'undefined') {
-    return window.location.href.replace(/\/\?.*/g, '');
-  } else {
-    return process.env.PUBLIC_URL;
-  }
+  return window.location.href.replace(/\/\?.*/g, '');
 }
 
 export default App
