@@ -109,6 +109,12 @@ npm run lint
 
 ## Testing
 
+### Run unit tests
+
+```bash
+npm run test
+```
+
 ### OAuth start
 
 The Google login button only appears on the homepage if the OAuth request parameters are provided. For testing, you can call the app homepage with the client ID of our sandbox OAuth app:

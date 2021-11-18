@@ -9,7 +9,7 @@ import translationES from './locales/es.json';
 import translationNL from './locales/nl.json';
 import LanguageDetector from './utils/lang.js';
 import { encodeState } from './utils/state.js';
-import Homepage from './views/Homepage';
+import Homepage from './views/Homepage/Homepage';
 import { PrivacyNotice,TermsOfUse } from './views/LegalContent';
 import ReturnPrompt from './views/ReturnPrompt';
 
