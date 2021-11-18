@@ -24,6 +24,5 @@ button#GoogleOAuthButton::before {
 }
 
 button#GoogleOAuthButton:hover {
-	background: #3367d6 !important;
-	
+	background: #3367d6;
 }
