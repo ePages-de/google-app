@@ -1,17 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 button#GoogleOAuthButton {
-	background-repeat: no-repeat !IMPORTANT;
-	padding: 0 12px 0 50px;
+	padding: 0 12px 0 0;
 	background: #4285f4;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: 500;
-	max-width: 248px;
-	border: 1;
+	border: 0;
+	border-radius: 2px;
+	color: #fff;
+}
+
+button#GoogleOAuthButton::before {
+	background-image: url('btn_google_light_normal_ios.svg');
+	background-repeat: no-repeat;
+	content: "";
+	display: inline-block;
+	width: 40px;
 	height: 40px;
+	vertical-align: middle;
+	margin-right: 11px;
+	border: 0;
 }
 
 button#GoogleOAuthButton:hover {
-	background: #3367d6;
+	background: #3367d6 !important;
+	
 }
