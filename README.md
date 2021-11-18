@@ -22,23 +22,15 @@ In the OAuth consent screen configuration we need to provide links to the app's 
 - https://google-app.epages.com/#/privacy-notice
 - https://google-app.epages.com/#/terms-of-use
 
-![App domain config](./docs/app-domain-config.png)
-
 ### Proxies the OAuth flow
 
 It is important to Google that the user can trust the redirect URI where the authorization server redirects the browser to after the API consent. So, the redirect URL needs to be on the same domain like from where they started. Since the authorized redirect URIs need to be allow-listed, this cannot under the shop domain. So, we have the app homepage as intermediary step in the OAuth flow.
 
 ![OAuth flow](./docs/oauth-flow.png)
 
-1. Instead of contacting the autorization server directly from the shop administration, we are sending the parameters which we would normally send there to the app homepage. The app homepage then provides a "Sign in with Google" button using those parameters.
-
-![OAuth flow end](./docs/oauth-start.png)
-
+1. Instead of contacting the autorization server directly from the shop administration, we are sending the parameters which we would normally send there to the app homepage. The app homepage then provides a "Sign in with Google" button using those parameters (see [screenshot](./docs/oauth-start.png)).
 2. After clicking on that button, you will be send to Google's authorization server.
-3. Once the API consent has been given, the authorization server will redirect you back to the app homepage.
-
-![OAuth flow end](./docs/oauth-end.png)
-
+3. Once the API consent has been given, the authorization server will redirect you back to the app homepage (see [screenshot](./docs/oauth-end.png)).
 4. After a countdown of three seconds, there will be an automatic redirect to a redirect microservice.
 5. That microservice will eventually dispatch the request to the ePages installation where the tokens get generated. The dispatching is happening with the help of the `scope` request parameter.
 
@@ -64,11 +56,12 @@ To work on the Google app homepage, you need to have the current [LTS version of
 
 To start the development server, clone the repository, install the dependencies, and then call the `start` task.
 
-```
-$ git clone git@github.com:ePages-de/google-app.git
-$ cd google-app
-$ npm install
-$ npm start
+```shell
+git clone git@github.com:ePages-de/google-app.git
+# https://github.com/ePages-de/google-app.git
+cd google-app
+npm install
+npm start
 ```
 
 Then, the app will be accessible at http://localhost:3000 .
