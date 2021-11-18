@@ -41,7 +41,7 @@ function _oauthRequestParams(searchParams) {
   if (accessType) {
     urlParams.set('state', encodeState({
       systemRedirectUri: urlParams.get("redirect_uri"),
-      shopRedirectUri: urlParams.get("state")
+      originalState: urlParams.get("state")
     }));
     urlParams.set('redirect_uri', _baseUrl());
     return urlParams;

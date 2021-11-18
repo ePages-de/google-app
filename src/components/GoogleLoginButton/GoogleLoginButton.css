@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-#GoogleOAuthButton {
+button#GoogleOAuthButton {
 	padding: 0 12px 0 0;
 	background: #4285f4;
 	font-family: 'Roboto', sans-serif;
@@ -11,7 +11,7 @@
 	color: #fff;
 }
 
-#GoogleOAuthButton::before {
+button#GoogleOAuthButton::before {
 	background-image: url('btn_google_light_normal_ios.svg');
 	background-repeat: no-repeat;
 	content: "";
@@ -23,6 +23,6 @@
 	border: 0;
 }
 
-#GoogleOAuthButton:hover {
+button#GoogleOAuthButton:hover {
 	background: #3367d6;
 }
