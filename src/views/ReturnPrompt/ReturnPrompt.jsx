@@ -1,12 +1,12 @@
-import './Redirect.css';
+import './ReturnPrompt.css';
 
 import i18n from 'i18next';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useEffect, useState } from 'react';
 
-import Footer from '../components/Footer';
-import { decodeState } from '../utils/state.js';
+import Footer from '../../components/Footer';
+import { decodeState } from '../../utils/state.js';
 
 const secondsUntilAutoRedirect = 3;
 
@@ -74,7 +74,7 @@ function ReturnPrompt(props) {
 }
 
 ReturnPrompt.propTypes = {
-  oauthResponseParams: PropTypes.func.isRequired,
+  oauthResponseParams: PropTypes.object.isRequired,
 };
 
 function Countdown(props) {
@@ -87,7 +87,7 @@ function Countdown(props) {
 }
 
 Countdown.propTypes = {
-  seconds: PropTypes.func.isRequired,
+  seconds: PropTypes.number.isRequired,
 };
 
 function TokenGenerationSnippet(props) {
@@ -104,16 +104,16 @@ function TokenGenerationSnippet(props) {
   
   return (
     <div className="App">
-      <h1>Authentication successful</h1>
-      <textarea rows="10" cols="100">
-        { curlSnippet }
-      </textarea>
+      <div className="container">
+        <h1>Authentication successful</h1>
+        <textarea rows="10" cols="100" defaultValue={ curlSnippet } />
+      </div>
     </div>
   );
 }
 
 TokenGenerationSnippet.propTypes = {
-  oauthCode: PropTypes.func.isRequired,
+  oauthCode: PropTypes.string.isRequired,
 };
 
 function _isOauthResponseForManualTokenGeneration(state) {

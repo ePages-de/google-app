@@ -104,6 +104,8 @@ npm run lint
 
 ### Run unit tests
 
+This project uses [Jest](https://jestjs.io/) and the [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for unit testing. You can run the tests by calling the `test` task.
+
 ```bash
 npm run test
 ```

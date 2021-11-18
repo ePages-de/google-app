@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Footer from '../../components/Footer';
-import GoogleLoginButton from '../../components/GoogleLoginButton';
+import GoogleLoginButton from '../../components/GoogleLoginButton/GoogleLoginButton';
 
 function Homepage(props) {
   return (

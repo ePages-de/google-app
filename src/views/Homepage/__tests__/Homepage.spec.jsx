@@ -5,6 +5,7 @@ import React from 'react';
 
 import { initializeEnglishLocale } from '../../../../test/i18nForTests';
 import Homepage from '../Homepage'
+import { encodeState } from '../../../utils/state';
 
 it('renders homepage', async () => {
   initializeEnglishLocale();
@@ -13,3 +14,24 @@ it('renders homepage', async () => {
   screen.getByText('Google Smart Shopping App');
   screen.getByText('ePages GmbH 2021. All rights reserved.');
 });
+
+it('renders google login button', async () => {
+  initializeEnglishLocale();
+  render(<Homepage oauthRequestParams={ _oauthRequestParams() } />)
+  
+  screen.getByText('Sign in with Google');
+});
+
+function _oauthRequestParams() {
+  const params = new URLSearchParams();
+  
+  params.set('response_type', 'code');
+  params.set('redirect_uri', 'https%3A%2F%2Fshops.example-reseller.com');
+  params.set('client_id', '746318976034-e9r0hta4db0d21e56d7eh1nhi8n4kj4d.apps.googleusercontent.com');
+  params.set('access_type', 'offline');
+  params.set('scope', 'https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcontent https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsiteverification https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fadwords https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email');
+  params.set('prompt', 'consent');
+  params.set('state', 'https%3A%2F%2Fmy-great-handicraft.com');
+  
+  return params;
+}
