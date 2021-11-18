@@ -1,12 +1,12 @@
-import './NewAgeTheme.css';
+import '../NewAgeTheme.css';
 import './Homepage.css';
 
 import i18n from 'i18next';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Footer from '../components/Footer';
-import GoogleLoginButton from '../components/GoogleLoginButton';
+import Footer from '../../components/Footer';
+import GoogleLoginButton from '../../components/GoogleLoginButton';
 
 function Homepage(props) {
   return (
