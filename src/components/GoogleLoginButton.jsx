@@ -4,8 +4,6 @@ import i18n from 'i18next';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import GoogleButtonBackground from './btn_google_light_normal_ios.svg';
-
 const oauthBaseUrl = 'https://accounts.google.com/o/oauth2/auth';
 
 function GoogleLoginButton(props) {
@@ -14,9 +12,7 @@ function GoogleLoginButton(props) {
   
   return (
     <a href={ oauthInitUrl }>
-      <button className="ep-button google-branding-button" id="GoogleOAuthButton" type="button" name="Save" style={{
-        background: `url(${GoogleButtonBackground})`
-      }}>
+      <button className="ep-button google-branding-button" id="GoogleOAuthButton" type="button" name="Save" >
         { i18n.t('components.googleLoginButton.label') }
       </button>
     </a>
