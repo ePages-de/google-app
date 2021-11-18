@@ -23,7 +23,7 @@ it('renders token generation snippet', async () => {
 function _oauthResponseParamsWithState() {
   const params = new URLSearchParams();
   
-  params.set('state', 'eyJzeXN0ZW1SZWRpcmVjdFVyaSI6Imh0dHBzOi8vc2hvcHMuZXhhbXBsZS1yZXNlbGxlci5jb20iLCJzaG9wUmVkaXJlY3RVcmkiOiJodHRwczovL3Nob3AuZXhhbXBsZS5jb20ifQ');
+  params.set('state', 'eyJzeXN0ZW1SZWRpcmVjdFVyaSI6Imh0dHBzOi8vc2hvcHMuZXhhbXBsZS1yZXNlbGxlci5jb20iLCJvcmlnaW5hbFN0YXRlIjoiaHR0cHMlM0ElMkYlMkZteS1ncmVhdC1oYW5kaWNyYWZ0LmNvbSJ9');
   params.set('code', 'xxxxx');
   params.set('scope', 'email%20https://www.googleapis.com/auth/content%20https://www.googleapis.com/auth/siteverification%20https://www.googleapis.com/auth/adwords%20openid%20https://www.googleapis.com/auth/userinfo.email');
   params.set('authuser', '1');

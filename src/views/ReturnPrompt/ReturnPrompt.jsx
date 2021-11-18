@@ -118,14 +118,14 @@ TokenGenerationSnippet.propTypes = {
 
 function _isOauthResponseForManualTokenGeneration(state) {
   const decodedState = decodeState(state);
-  return !('shopRedirectUri' in decodedState);
+  return !('originalState' in decodedState);
 }
 
 function _buildReturnUrl(oauthResponseParams) {
   const state = decodeState(oauthResponseParams.get("state"));
   
   var redirectParams = new URLSearchParams();
-  redirectParams.set('state', state.shopRedirectUri);
+  redirectParams.set('state', state.originalState);
   redirectParams.set('code', oauthResponseParams.get('code'));
   redirectParams.set('scope', oauthResponseParams.get('scope'));
   redirectParams.set('prompt', oauthResponseParams.get('prompt'));
