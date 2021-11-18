@@ -104,13 +104,19 @@ npm run lint
 
 ### Run unit tests
 
+This project uses [Jest](https://jestjs.io/) and the [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for unit testing. You can run the tests by calling the `test` task.
+
 ```bash
 npm run test
 ```
 
 ### OAuth start
 
-The Google login button only appears on the homepage if the OAuth request parameters are provided. For testing, you can call the app homepage with the client ID of our sandbox OAuth app:
+The Google login button only appears on the homepage if the OAuth request parameters are provided. For testing, you can call the app homepage with the client ID of our sandbox OAuth app and example values for the other parameters:
+
+http://localhost:3000?response_type=code&redirect_uri=https://shops.example-reseller.com&client_id=746318976034-e9r0hta4db0d21e56d7eh1nhi8n4kj4d.apps.googleusercontent.com&access_type=offline&scope=https://www.googleapis.com/auth/content%20https://www.googleapis.com/auth/siteverification%20https://www.googleapis.com/auth/adwords&prompt=consent&state=https%253A%252F%252Fmy-great-handicraft.com
+
+If you provide only the `client_id` parameter, the default values for the Google Smart Shopping integration will be used:
 
 http://localhost:3000?client_id=746318976034-e9r0hta4db0d21e56d7eh1nhi8n4kj4d.apps.googleusercontent.com
 
@@ -120,7 +126,7 @@ The OAuth end page is rendered if the homepage was called with the OAuth respons
 
 For testing the redirection page, you can open this URL in a browser:
 
-http://localhost:3000?state=eyJzeXN0ZW1SZWRpcmVjdFVyaSI6Imh0dHBzOi8vc2hvcHMuZXhhbXBsZS1yZXNlbGxlci5jb20iLCJzaG9wUmVkaXJlY3RVcmkiOiJodHRwczovL3Nob3AuZXhhbXBsZS5jb20ifQ%3D%3D&code=xxxxx&scope=email%20https://www.googleapis.com/auth/content%20https://www.googleapis.com/auth/siteverification%20https://www.googleapis.com/auth/adwords%20openid%20https://www.googleapis.com/auth/userinfo.email&authuser=1&prompt=consent
+http://localhost:3000?state=eyJzeXN0ZW1SZWRpcmVjdFVyaSI6Imh0dHBzOi8vc2hvcHMuZXhhbXBsZS1yZXNlbGxlci5jb20iLCJvcmlnaW5hbFN0YXRlIjoiaHR0cHMlM0ElMkYlMkZteS1ncmVhdC1oYW5kaWNyYWZ0LmNvbSJ9&code=xxxxx&scope=email%20https://www.googleapis.com/auth/content%20https://www.googleapis.com/auth/siteverification%20https://www.googleapis.com/auth/adwords%20openid%20https://www.googleapis.com/auth/userinfo.email&authuser=1&prompt=consent
 
 For testing the cURL snippet generation, you can call the app homepage with this example request:
 

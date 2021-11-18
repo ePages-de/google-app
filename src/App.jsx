@@ -8,10 +8,9 @@ import translationEN from './locales/en.json';
 import translationES from './locales/es.json';
 import translationNL from './locales/nl.json';
 import LanguageDetector from './utils/lang.js';
-import { encodeState } from './utils/state.js';
 import Homepage from './views/Homepage/Homepage';
 import { PrivacyNotice,TermsOfUse } from './views/LegalContent';
-import ReturnPrompt from './views/ReturnPrompt';
+import ReturnPrompt from './views/ReturnPrompt/ReturnPrompt';
 
 function App() {
   _initInternationalization();
@@ -51,12 +50,12 @@ function UrlParameterRouter() {
   
   if (clientId && !redirectUri) {
     return (
-      <Homepage oauthRequestParams={ _defaultAuthRequestParams(searchParams) } />
+      <Homepage oauthRequestParams={ searchParams } />
     );
   } 
   
   return (
-    <Homepage oauthRequestParams={ _oauthRequestParams(searchParams) } />
+    <Homepage oauthRequestParams={ searchParams } />
   );
 }
 
@@ -83,38 +82,6 @@ function _initInternationalization() {
       resources
     })
   ;
-}
-
-function _oauthRequestParams(searchParams) {
-  const urlParams = new URLSearchParams(searchParams.toString());
-  const accessType = searchParams.get("access_type");
-  
-  if (accessType) {
-    urlParams.set('state', encodeState({
-      systemRedirectUri: urlParams.get("redirect_uri"),
-      shopRedirectUri: urlParams.get("state")
-    }));
-    urlParams.set('redirect_uri', _baseUrl());
-    return urlParams;
-  }
-}
-
-function _defaultAuthRequestParams(searchParams) {
-  const clientId = searchParams.get("client_id");
-  const params = new URLSearchParams();
-  
-  params.set('client_id', clientId);
-  params.set('response_type', 'code');
-  params.set('redirect_uri', _baseUrl());
-  params.set('access_type', 'offline');
-  params.set('scope', 'https://www.googleapis.com/auth/content https://www.googleapis.com/auth/siteverification https://www.googleapis.com/auth/adwords');
-  params.set('prompt', 'consent');
-  
-  return params;
-}
-
-function _baseUrl() {
-  return window.location.href.replace(/\/\?.*/g, '');
 }
 
 export default App
