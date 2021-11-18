@@ -13,4 +13,4 @@ function initializeEnglishLocale() {
     });
 }
 
-export initializeEnglishLocale;
+export { initializeEnglishLocale };

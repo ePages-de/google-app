@@ -1,9 +1,9 @@
-import '@testing-library/jest-dom'
+import '@testing-library/jest-dom';
 
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import React from 'react';
 
-import initializeEnglishLocale from '../../../../test/i18nForTests';
+import { initializeEnglishLocale } from '../../../../test/i18nForTests';
 import Homepage from '../Homepage'
 
 it('renders homepage', async () => {
