@@ -6,6 +6,11 @@ import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer';
 import { decodeState } from '../../utils/state.js';
 
+const allowedRedirectDomains = [
+  "epages.com",
+  "epages.systems",
+];
+
 const secondsUntilAutoRedirect = 3;
 
 const useCountDown = (start) => {
@@ -26,6 +31,9 @@ function ReturnPrompt(props) {
 
   if (_isOauthResponseForManualTokenGeneration(oauthResponseParams.get("state"))) {
     return (<TokenGenerationSnippet oauthCode={ oauthResponseParams.get("code") } />);
+  }
+  if (_isForbiddenRedirectUri(oauthResponseParams.get("state"))) {
+    return (<h1>403 Forbidden</h1>);
   }
   
   const returnUrl = _buildReturnUrl(oauthResponseParams);
@@ -74,6 +82,18 @@ function ReturnPrompt(props) {
 ReturnPrompt.propTypes = {
   oauthResponseParams: PropTypes.object.isRequired,
 };
+
+function _isForbiddenRedirectUri(state) {
+  const decodedState = decodeState(state);
+  const redirectHostname = new URL(decodedState.systemRedirectUri).hostname.toLowerCase();
+  for (let i = 0; i < allowedRedirectDomains.length; i++) {
+    const allowedDomain = allowedRedirectDomains[i].toLowerCase();
+    if (redirectHostname.endsWith(allowedDomain)) {
+      return false;
+    }
+  }
+  return true;
+}
 
 function Countdown(props) {
   const timeLeft = useCountDown(props.seconds);
