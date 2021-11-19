@@ -20,7 +20,7 @@ it('renders token generation snippet', async () => {
   screen.getByText('Authentication successful');
 });
 
-if('prevents redirect to external uri', async () => {
+it('prevents redirect to external uri', async () => {
   render(<ReturnPrompt oauthResponseParams={ _oauthResponseParamsWithExternalRedirectUri() } />)
   
   screen.getByText('403 Forbidden');
