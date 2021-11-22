@@ -45,7 +45,7 @@ As a bonus feature, you can use the app homepage to help you manually generate a
 
 ```
 # Example URL
-https://google-app.epages.com?client_id=111111111111-a1a1aaa1aa1a11a11a1aa1aaa1a1aa1a.apps.googleusercontent.com)
+https://google-app.epages.com?client_id=111111111111-a1a1aaa1aa1a11a11a1aa1aaa1a1aa1a.apps.googleusercontent.com
 ```
 
 ## Development
