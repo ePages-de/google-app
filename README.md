@@ -43,8 +43,10 @@ We determine which language to use based on the user's browser language.
 
 As a bonus feature, you can use the app homepage to help you manually generate access tokens. If you add only the `?client_id=xxxx` parameter to the homepage, the "Sign in with Google" button will be rendered with the default parameters and scopes required for the Google Smart Shopping app. Instead of redirecting you back to a shop, the app homepage will render a cURL snippet which you can run in your terminal for manual token generation.
 
-- [App Homepage / Sandbox Client ID](https://google-app.epages.com?client_id=746318976034-e9r0hta4db0d21e56d7eh1nhi8n4kj4d.apps.googleusercontent.com)
-- App Homepage / Production Client ID
+```
+# Example URL
+https://google-app.epages.com?client_id=111111111111-a1a1aaa1aa1a11a11a1aa1aaa1a1aa1a.apps.googleusercontent.com)
+```
 
 ## Development
 
