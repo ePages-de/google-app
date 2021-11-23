@@ -1,3 +1,5 @@
+import './Footer.css';
+
 import i18n from 'i18next';
 import React from 'react';
 

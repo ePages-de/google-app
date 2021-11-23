@@ -5,14 +5,13 @@ import React from 'react';
 
 import { initializeEnglishLocale } from '../../../../test/i18nForTests';
 import Homepage from '../Homepage'
-import { encodeState } from '../../../utils/state';
 
 it('renders homepage', async () => {
   initializeEnglishLocale();
   render(<Homepage />)
   
   screen.getByText('Google Smart Shopping App');
-  screen.getByText('ePages GmbH 2021. All rights reserved.');
+  screen.getByText('© ePages GmbH 2021. All rights reserved.');
 });
 
 it('renders google login button', async () => {

@@ -5,7 +5,6 @@ import React from 'react';
 
 import { initializeEnglishLocale } from '../../../../test/i18nForTests';
 import GoogleLoginButton from '../GoogleLoginButton'
-import { encodeState } from '../../../utils/state';
 
 it('renders google login button', async () => {
   initializeEnglishLocale();

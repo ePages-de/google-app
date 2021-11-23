@@ -1,5 +1,3 @@
-import './ReturnPrompt.css';
-
 import i18n from 'i18next';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -107,6 +105,10 @@ function TokenGenerationSnippet(props) {
       <div className="container">
         <h1>Authentication successful</h1>
         <textarea rows="10" cols="100" defaultValue={ curlSnippet } />
+      </div>
+      
+      <div className="fixedFooter">
+        <Footer />
       </div>
     </div>
   );
