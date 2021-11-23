@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f4a39d0.chunk.css",
-    "main.js": "/static/js/main.e8e6b6f9.chunk.js",
-    "main.js.map": "/static/js/main.e8e6b6f9.chunk.js.map",
+    "main.css": "/static/css/main.f3837364.chunk.css",
+    "main.js": "/static/js/main.1361ddf0.chunk.js",
+    "main.js.map": "/static/js/main.1361ddf0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4bccd9c8.js",
     "runtime-main.js.map": "/static/js/runtime-main.4bccd9c8.js.map",
-    "static/js/2.39eb2390.chunk.js": "/static/js/2.39eb2390.chunk.js",
-    "static/js/2.39eb2390.chunk.js.map": "/static/js/2.39eb2390.chunk.js.map",
+    "static/js/2.6c2d2fcd.chunk.js": "/static/js/2.6c2d2fcd.chunk.js",
+    "static/js/2.6c2d2fcd.chunk.js.map": "/static/js/2.6c2d2fcd.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.4f4a39d0.chunk.css.map": "/static/css/main.4f4a39d0.chunk.css.map",
-    "static/js/2.39eb2390.chunk.js.LICENSE.txt": "/static/js/2.39eb2390.chunk.js.LICENSE.txt",
+    "static/css/main.f3837364.chunk.css.map": "/static/css/main.f3837364.chunk.css.map",
+    "static/js/2.6c2d2fcd.chunk.js.LICENSE.txt": "/static/js/2.6c2d2fcd.chunk.js.LICENSE.txt",
     "static/media/GoogleLoginButton.css": "/static/media/btn_google_light_normal_ios.9db6a818.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4bccd9c8.js",
-    "static/js/2.39eb2390.chunk.js",
-    "static/css/main.4f4a39d0.chunk.css",
-    "static/js/main.e8e6b6f9.chunk.js"
+    "static/js/2.6c2d2fcd.chunk.js",
+    "static/css/main.f3837364.chunk.css",
+    "static/js/main.1361ddf0.chunk.js"
   ]
 }
