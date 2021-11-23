@@ -21,6 +21,22 @@ it('renders google login button', async () => {
   screen.getByText('Sign in with Google');
 });
 
+it('does not render google login button without request params', async () => {
+  initializeEnglishLocale();
+  render(<Homepage />)
+  
+  const googleLoginButton = screen.queryByText('Sign in with Google');
+  expect(googleLoginButton).toBeNull();
+});
+
+it('does not render google login button without oauth request params', async () => {
+  initializeEnglishLocale();
+  render(<Homepage oauthRequestParams={ new URLSearchParams() } />)
+  
+  const googleLoginButton = screen.queryByText('Sign in with Google');
+  expect(googleLoginButton).toBeNull();
+});
+
 function _oauthRequestParams() {
   const params = new URLSearchParams();
   
