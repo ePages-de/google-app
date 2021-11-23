@@ -76,7 +76,7 @@ function Teaser(props) {
                       { i18n.t('views.homepage.tagline.label') }
                     </p>
                     {
-                      props.oauthRequestParams &&
+                      _shouldRenderGoogleLoginButton(props) &&
                         <GoogleLoginButton oauthRequestParams={props.oauthRequestParams} />
                     }
                 </div>
@@ -90,6 +90,13 @@ function Teaser(props) {
 Teaser.propTypes = {
   oauthRequestParams: PropTypes.object,
 };
+
+function _shouldRenderGoogleLoginButton(props) {
+  if (!(props.oauthRequestParams)) {
+    return false;
+  }
+  return props.oauthRequestParams.get('client_id') !== null;
+}
 
 function Screenshots() {
   return (
