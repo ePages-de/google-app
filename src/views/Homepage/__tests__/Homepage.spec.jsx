@@ -10,7 +10,7 @@ it('renders homepage', async () => {
   initializeEnglishLocale();
   render(<Homepage />)
 
-  screen.getByText('Shopping ads for Google');
+  screen.getByText('Shopping ads on Google');
   screen.getByText('© ePages GmbH 2021. All rights reserved.');
 });
 
