@@ -12,8 +12,11 @@
           "label": "Legal"
         }
       },
+      "title": {
+        "label": "Shopping ads for Google"
+      },
       "tagline": {
-        "label": "With ePages' Google Smart Shopping integration you can create ads for the products in your online shop with minimal effort. Connect your Google accounts, upload your products, and create a campaign – done."
+        "label": "With Shopping ads for Google you can create ads for the products in your online shop with minimal effort. Connect your Google accounts, upload your products, and create a campaign – done."
       },
       "concept": {
         "heading": {

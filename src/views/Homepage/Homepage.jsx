@@ -12,13 +12,13 @@ function Homepage(props) {
   return (
     <div className="App">
       <Header />
-      
+
       <Teaser oauthRequestParams={ props.oauthRequestParams } />
       <Screenshots />
       <Features />
       <DataUsage />
       <LegalDocuments />
-      
+
       <Footer />
     </div>
   );
@@ -35,7 +35,7 @@ function Header() {
             <a href={ process.env.PUBLIC_URL }>
               <img src={ process.env.PUBLIC_URL + '/img/Epages_Logo.png' } style={{ maxWidth: '200px' }} alt="ePages Logo" />
             </a>
-          
+
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i className="bi-list"></i>
@@ -71,7 +71,9 @@ function Teaser(props) {
           <div className="row gx-5 align-items-center">
             <div className="col-lg-12">
                 <div className="mb-7 mb-lg-0 text-center text-lg-start">
-                    <h1 className="display-4 lh-4 mb-6">Google Smart Shopping App</h1>
+                    <h1 className="display-4 lh-4 mb-6">
+                      { i18n.t('views.homepage.title.label') }
+                    </h1>
                     <p className="lead fw-normal text-muted mb-5">
                       { i18n.t('views.homepage.tagline.label') }
                     </p>
@@ -133,7 +135,7 @@ function Features() {
                   <div className="container-fluid px-5">
                       <div className="row gx-5">
                           <div className="col-md-4 mb-5">
-                              
+
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
@@ -145,7 +147,7 @@ function Features() {
                               </div>
                           </div>
                           <div className="col-md-4 mb-5">
-                              
+
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
@@ -158,7 +160,7 @@ function Features() {
                           </div>
 
                           <div className="col-md-4 mb-5">
-                              
+
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
@@ -173,7 +175,7 @@ function Features() {
                       </div>
                       <div className="row gx-5">
                           <div className="col-md-4 mb-5">
-                              
+
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
@@ -185,7 +187,7 @@ function Features() {
                               </div>
                           </div>
                           <div className="col-md-4 mb-5">
-                              
+
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
@@ -197,7 +199,7 @@ function Features() {
                               </div>
                           </div>
                           <div className="col-md-4 mb-5">
-                              
+
                               <div className="text-center">
                                   <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
                                   <h3 className="font-alt">
@@ -260,7 +262,7 @@ function LegalDocuments() {
                             </h3>
                             { i18n.t('views.homepage.legal.downloadHint.label') }
                           </div>
-                        </a>					
+                        </a>
                     </div>
                     <div className="col-sm-6">
                         <a href={ process.env.PUBLIC_URL + "/legal-content/" + i18n.t('legalContent.termsOfUse') }>
@@ -271,7 +273,7 @@ function LegalDocuments() {
                               { i18n.t('views.homepage.legal.downloadHint.label') }
                           </div>
                         </a>
-                    </div>  
+                    </div>
                   </div>
               </div>
             </div>
