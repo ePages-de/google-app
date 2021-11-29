@@ -251,7 +251,11 @@ function LegalDocuments() {
 
                   <div className="row">
                     <div className="col-sm-6">
-                        <a href={ process.env.PUBLIC_URL + "/legal-content/" + i18n.t('legalContent.privacyNotice') }>
+                        <a
+                          href={ process.env.PUBLIC_URL + "/legal-content/" + i18n.t('legalContent.privacyNotice') }
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <div className="tile blue">
                             <h3 className="title"><i className="bi bi-file-text"></i>
                               { i18n.t('views.homepage.legal.privacyNotice.label') }
@@ -261,7 +265,11 @@ function LegalDocuments() {
                         </a>
                     </div>
                     <div className="col-sm-6">
-                        <a href={ process.env.PUBLIC_URL + "/legal-content/" + i18n.t('legalContent.termsOfUse') }>
+                        <a
+                          href={ process.env.PUBLIC_URL + "/legal-content/" + i18n.t('legalContent.termsOfUse') }
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <div className="tile blue">
                               <h3 className="title"><i className="bi bi-file-text"></i>
                                 { i18n.t('views.homepage.legal.termsOfUse.label') }
