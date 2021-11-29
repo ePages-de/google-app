@@ -36,10 +36,6 @@ function Header() {
               <img src={ process.env.PUBLIC_URL + '/img/Epages_Logo.png' } style={{ maxWidth: '200px' }} alt="ePages Logo" />
             </a>
 
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i className="bi-list"></i>
-            </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ms-auto me-4 my-3 my-lg-0">
                     <li className="nav-item">
