@@ -88,7 +88,9 @@ function _isForbiddenRedirectUri(state) {
   const redirectHostname = new URL(decodedState.systemRedirectUri).hostname.toLowerCase();
   for (let i = 0; i < allowedRedirectDomains.length; i++) {
     const allowedDomain = allowedRedirectDomains[i].toLowerCase();
-    if (redirectHostname.endsWith(allowedDomain)) {
+    if (
+      redirectHostname.endsWith(`.${allowedDomain}`) || redirectHostname === allowedDomain
+    ) {
       return false;
     }
   }
