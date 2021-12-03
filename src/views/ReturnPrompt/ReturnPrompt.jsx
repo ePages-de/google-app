@@ -9,6 +9,7 @@ import { decodeState } from '../../utils/state.js';
 const allowedRedirectDomains = [
   "epages.com",
   "epages.systems",
+  "epages.de",
 ];
 
 const secondsUntilAutoRedirect = 3;
