@@ -29,9 +29,16 @@ const useCountDown = (start) => {
 
 function ReturnPrompt(props) {
   const oauthResponseParams = props.oauthResponseParams;
+  const oauthCode = oauthResponseParams.get("code");
+  const oauthError = oauthResponseParams.get("error");
 
   if (_isOauthResponseForManualTokenGeneration(oauthResponseParams.get("state"))) {
-    return (<TokenGenerationSnippet oauthCode={ oauthResponseParams.get("code") } />);
+    if (oauthCode) {
+      return (<TokenGenerationSnippet oauthCode={ oauthCode } />);
+    }
+    if (oauthError) {
+      return (<ErrorRedirectSnippet error={ oauthError } />);
+    }
   }
   if (_isForbiddenRedirectUri(oauthResponseParams.get("state"))) {
     return (<h1>403 Forbidden</h1>);
@@ -40,6 +47,11 @@ function ReturnPrompt(props) {
   const returnUrl = _buildReturnUrl(oauthResponseParams);
   
   _scheduleAutoRedirect(returnUrl);
+
+  let label = i18n.t('views.callback.heading.label');
+  if (oauthError) {
+    label = i18n.t('views.callback.heading.errorlabel');
+  }
     
   return (
     <div className="App">
@@ -56,7 +68,7 @@ function ReturnPrompt(props) {
                 <div className="col-lg-12">
                     <div className="mb-7 mb-lg-0 text-center text-lg-start">
                         <h1 className="display-4 lh-4 mb-6">
-                          { i18n.t('views.callback.heading.label') }
+                          { label }
                         </h1>
                         
                         <Countdown seconds={ secondsUntilAutoRedirect } />
@@ -137,8 +149,38 @@ function TokenGenerationSnippet(props) {
   );
 }
 
+function ErrorRedirectSnippet(props) {
+  const baseUrl = window.location.href.replace(/\/\?.*/g, '');
+  const curlSnippet =  `curl -X POST \\
+  -F 'error=${props.oauthError}' \\
+  -F 'client_id='$GOOGLE_CLIENT_ID \\
+  -F 'client_secret='$GOOGLE_CLIENT_SECRET \\
+  -F 'redirect_uri=${baseUrl}' \\
+  -F 'access_type=offline' \\
+  -F 'grant_type=authorization_code' \\
+  https://accounts.google.com/o/oauth2/token
+  `;
+
+  return (
+    <div className="App">
+      <div className="container">
+        <h1>Authentication error!</h1>
+        <textarea rows="10" cols="100" defaultValue={ curlSnippet } />
+      </div>
+
+      <div className="fixedFooter">
+        <Footer />
+      </div>
+    </div>
+  );
+}
+
 TokenGenerationSnippet.propTypes = {
   oauthCode: PropTypes.string.isRequired,
+};
+
+ErrorRedirectSnippet.propTypes = {
+  oauthError: PropTypes.string.isRequired,
 };
 
 function _isOauthResponseForManualTokenGeneration(state) {
@@ -148,10 +190,17 @@ function _isOauthResponseForManualTokenGeneration(state) {
 
 function _buildReturnUrl(oauthResponseParams) {
   const state = decodeState(oauthResponseParams.get("state"));
+  const oauthCode = oauthResponseParams.get('code');
+  const oauthError = oauthResponseParams.get('error');
   
   var redirectParams = new URLSearchParams();
   redirectParams.set('state', state.originalState);
-  redirectParams.set('code', oauthResponseParams.get('code'));
+  if (oauthCode) {
+    redirectParams.set('code', oauthCode);
+  }
+  if (oauthError) {
+    redirectParams.set('error', oauthError);
+  }
   redirectParams.set('scope', oauthResponseParams.get('scope'));
   redirectParams.set('prompt', oauthResponseParams.get('prompt'));
   

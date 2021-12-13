@@ -37,22 +37,15 @@ function UrlParameterRouter() {
   const [searchParams] = useSearchParams();
   
   const code = searchParams.get("code");
-  const clientId = searchParams.get("client_id");
-  const redirectUri = searchParams.get("redirect_uri");
+  const error = searchParams.get("error");
   
-  if (code) {
+  if (code || error) {
     return (
       <div className="App">
         <ReturnPrompt oauthResponseParams={ searchParams } />
       </div>
     );
   }
-  
-  if (clientId && !redirectUri) {
-    return (
-      <Homepage oauthRequestParams={ searchParams } />
-    );
-  } 
   
   return (
     <Homepage oauthRequestParams={ searchParams } />

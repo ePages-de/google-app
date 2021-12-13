@@ -100,7 +100,8 @@
     },
     "callback": {
       "heading": {
-        "label": "Login successful"
+        "label": "Login successful",
+        "errorlabel": "Login failed"
       },
       "redirectionMessage": {
         "label_one": "In 1 second, you will be automatically redirected into your shop, to finish the installation of the Google app.",
