@@ -70,10 +70,10 @@ strong {
 }		
 
 
-.blue {   background: #2672EC;}
+.blue {   background: #418CD2;}
 
 .blue:hover {
-	background: darken(#2672EC, 10%);
+	background: darken(#7bb0e7, 10%);
 }	
 
 

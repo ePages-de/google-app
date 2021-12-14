@@ -13,7 +13,7 @@ function Homepage(props) {
     <div className="App">
       <Header />
       <Teaser oauthRequestParams={ props.oauthRequestParams } />
-      <ConceptSection />
+      <Concept />
       <Features />
       <LegalDocuments />
 
@@ -105,7 +105,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature1.heading.label') }
                                   </h3>
@@ -117,7 +117,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature2.heading.label') }
                                   </h3>
@@ -130,7 +130,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature3.heading.label') }
                                   </h3>
@@ -145,7 +145,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature4.heading.label') }
                                   </h3>
@@ -157,7 +157,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature5.heading.label') }
                                   </h3>
@@ -169,7 +169,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature6.heading.label') }
                                   </h3>
@@ -187,7 +187,7 @@ function Features() {
   );
 }
 
-function ConceptSection() {
+function Concept() {
   return (
     <section id="concept" className="bg-light">
         <div className="container px-5">
