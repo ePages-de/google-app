@@ -1,0 +1,14 @@
+phrase:
+  project_id: a05df2aa2bf0e186a65f26e54e635d8a
+  push:
+    sources:
+    - file: ./src/locales/<locale_name>.json
+      params:
+        file_format: nested_json
+        tag: homepage-google-smart-shopping
+  pull:
+    targets:
+    - file: ./src/locales/<locale_name>.json
+      params:
+        file_format: nested_json
+        tag: homepage-google-smart-shopping
