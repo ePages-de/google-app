@@ -12,11 +12,9 @@ function Homepage(props) {
   return (
     <div className="App">
       <Header />
-
       <Teaser oauthRequestParams={ props.oauthRequestParams } />
-      <Screenshots />
+      <Concept />
       <Features />
-      <DataUsage />
       <LegalDocuments />
 
       <Footer />
@@ -96,32 +94,6 @@ function _shouldRenderGoogleLoginButton(props) {
   return props.oauthRequestParams.get('client_id') !== null;
 }
 
-function Screenshots() {
-  return (
-    <aside className="text-center bg-gradient-primary-to-secondary">
-        <div className="container px-5">
-            <div className="row gx-5 justify-content-center">
-                <div className="col-xl-12">
-                  <div className="container-fluid p-0">
-                    <div className="row no-gutters popup-gallery">
-                      <div className="col-lg-4 col-sm-2">
-                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/setup_de.png'} height="200px" alt="Screenshot of setup tab" />
-                      </div>
-                      <div className="col-lg-4 col-sm-2">
-                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/productfeed_de.png'} height="200px" alt="Screenshot of product feed tab" />
-                      </div>
-                      <div className="col-lg-4 col-sm-2">
-                        <img className="screenshot" src={process.env.PUBLIC_URL + '/img/screenshots/campaign_de.png'} height="200px" alt="Screenshot of campaigns tab" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </aside>
-  );
-}
-
 function Features() {
   return (
     <section id="features">
@@ -133,7 +105,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature1.heading.label') }
                                   </h3>
@@ -145,7 +117,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature2.heading.label') }
                                   </h3>
@@ -158,7 +130,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature3.heading.label') }
                                   </h3>
@@ -173,7 +145,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature4.heading.label') }
                                   </h3>
@@ -185,7 +157,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature5.heading.label') }
                                   </h3>
@@ -197,7 +169,7 @@ function Features() {
                           <div className="col-md-4 mb-5">
 
                               <div className="text-center">
-                                  <i className="bi bi-check2-square icon-feature text-gradient d-block mb-3"></i>
+                                  <i className="bi bi-check2-square icon-feature d-block mb-3"></i>
                                   <h3 className="font-alt">
                                     { i18n.t('views.homepage.feature6.heading.label') }
                                   </h3>
@@ -215,7 +187,7 @@ function Features() {
   );
 }
 
-function DataUsage() {
+function Concept() {
   return (
     <section id="concept" className="bg-light">
         <div className="container px-5">

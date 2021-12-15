@@ -76,6 +76,9 @@ strong {
 	background: darken(#2672EC, 10%);
 }	
 
+div.blue:hover {
+	filter: brightness(90%);
+}
 
 .orange {  background: #DC572E;}
 
