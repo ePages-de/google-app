@@ -4,11 +4,11 @@ phrase:
     sources:
     - file: ./src/locales/<locale_name>.json
       params:
-        file_format: nested_json
+        file_format: i18next
         tag: homepage-google-smart-shopping
   pull:
     targets:
     - file: ./src/locales/<locale_name>.json
       params:
-        file_format: nested_json
+        file_format: i18next
         tag: homepage-google-smart-shopping
