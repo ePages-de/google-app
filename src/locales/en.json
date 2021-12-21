@@ -16,38 +16,38 @@
         "label": "Shopping ads on Google"
       },
       "tagline": {
-        "label": "With Shopping ads on Google you can create ads for the products in your online shop with minimal effort. Connect your Google accounts, upload your products, and create a campaign – done."
+        "label": "With our integration, you can easily create Smart Shopping campaigns to advertise your products on Google and keep track of their performance comfortably within your shop administration. Smart Shopping campaigns combine your product feed and Google's machine learning to achieve the best possible result. This way, the campaign learns and improves continuously, helping you to reach more online shoppers and maximize your sales revenue. Get started by signing in with Google."
       },
       "concept": {
         "heading": {
-          "label": "Concept"
+          "label": "How it works"
         },
         "description": {
-          "label": "ePages is managing your Google Merchant Center and Google Ads accounts on your behalf. Your products are uploaded to the Merchant Center. The Merchant Center account gets linked with the Ads account. In the Ads account campaigns get created and reports get fetched, so that you need nothing to do in the Ads account but setting up your billing information. After the creation of a Smart Shopping Campaign, tracking information for Conversion Actions and Remarketing Tags will be sent from your shop to Google."
+          "label": "Our integration manages your Google Merchant Center and Google Ads accounts on your behalf. After you have exported your products to your Merchant Center account and set up your billing information in your Google Ads account, you can use the integration to easily create your campaign in your shop administration. As the integration is connected to your Google accounts, you can also conveniently track your campaigns there."
         }
       },
       "feature1": {
         "heading": {
-          "label": "Google Merchant Center"
+          "label": "Merchant Center account"
         },
         "description": {
-          "label": "Connect your shop with an already existing Google Merchant Center account or create a new account directly from within the shop."
+          "label": "Connect your shop to a Merchant Center account and upload the shop and product data to Google. You can either use an existing account or simply create a new one without even leaving your shop."
         }
       },
       "feature2": {
         "heading": {
-          "label": "Product upload"
+          "label": "Product export"
         },
         "description": {
-          "label": "Automatically upload and synchronise the products in your shop with the Google Merchant Center, using the FTP upload."
+          "label": "Export the products you want to promote to Google and automatically synchronise them."
         }
       },
       "feature3": {
         "heading": {
-          "label": "Google Ads"
+          "label": "Google Ads account"
         },
         "description": {
-          "label": "Create a new Google Ads account, directly from within your shop administration."
+          "label": "Create a Google Ads account directly from your shop administration to manage your campaigns and campaign data."
         }
       },
       "feature4": {
@@ -55,7 +55,7 @@
           "label": "Smart Shopping Campaigns"
         },
         "description": {
-          "label": "Create ad campaigns with showcase your products to millions of shoppers across Google Search, Shopping, Gmail, YouTube, and the Display Network."
+          "label": "Create Smart Shopping campaigns and showcase your products to millions of shoppers across Google Search, Shopping, Gmail, YouTube, and the Display Network."
         }
       },
       "feature5": {
@@ -63,15 +63,15 @@
           "label": "Conversion tracking"
         },
         "description": {
-          "label": "When someone follows an ad and then purchases something, we will keep track of it and send this information to Google Ads."
+          "label": "View the number of conversions and the revenue your campaign generates for you directly in your shop administration."
         }
       },
       "feature6": {
         "heading": {
-          "label": "Campaign performance reports"
+          "label": "Performance reports"
         },
         "description": {
-          "label": "You will have an overview over the costs and benefits of your Smart Shopping Campaigns directly in your shop administration."
+          "label": "Keep an overview of the benefits and costs of your campaigns in our performance report. This enables you to evaluate the success of your campaign."
         }
       },
       "legal": {
