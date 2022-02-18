@@ -36,14 +36,14 @@ function Header() {
 
             <div className="collapse navbar-collapse" id="navbarResponsive">
                 <ul className="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li className="nav-item">
-                      <a className="nav-link me-lg-3" href="#features">
-                        { i18n.t('views.homepage.navbar.features.label') }
+                  <li className="nav-item">
+                      <a className="nav-link me-lg-3" href="#concept">
+                        { i18n.t('views.homepage.navbar.concept.label') }
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link me-lg-3" href="#concept">
-                        { i18n.t('views.homepage.navbar.concept.label') }
+                      <a className="nav-link me-lg-3" href="#features">
+                        { i18n.t('views.homepage.navbar.features.label') }
                       </a>
                     </li>
                     <li className="nav-item">
@@ -232,7 +232,6 @@ function LegalDocuments() {
                             <h3 className="title"><i className="bi bi-file-text"></i>
                               { i18n.t('views.homepage.legal.privacyNotice.label') }
                             </h3>
-                            { i18n.t('views.homepage.legal.downloadHint.label') }
                           </div>
                         </a>
                     </div>
@@ -246,7 +245,6 @@ function LegalDocuments() {
                               <h3 className="title"><i className="bi bi-file-text"></i>
                                 { i18n.t('views.homepage.legal.termsOfUse.label') }
                               </h3>
-                              { i18n.t('views.homepage.legal.downloadHint.label') }
                           </div>
                         </a>
                     </div>
