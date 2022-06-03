@@ -25,7 +25,7 @@
     "homepage": {
       "concept": {
         "description": {
-          "label": "Die Integration verwaltet Ihr Google Merchant Center- und Google Ads-Konto für Sie. Nachdem Sie Ihre Produkte zu Ihrem Merchant Center-Konto hochgeladen und Ihre Abrechnungsinformationen in Ihrem Google Ads-Konto eingerichtet haben, können Sie die Integration nutzen, um ganz einfach im Administrationsbereich Ihres Shops eine Kampagne zu erstellen. Da die Integration mit Ihren Google-Konten verbunden ist, können Sie dort auch bequem Ihre Kampagnen verwalten."
+          "label": "Die Integration verwaltet Ihr Google Merchant Center- und Google Ads-Konto für Sie. Nachdem Sie Ihre Produkte zu Ihrem Merchant Center-Konto hochgeladen und Ihre Abrechnungsinformationen in Ihrem Google Ads-Konto eingerichtet haben, können Sie die Integration nutzen, um ganz einfach im Administrationsbereich Ihres Shops eine Kampagne zu erstellen. Da die Integration mit Ihren Google-Konten verbunden ist, können Sie dort auch bequem Ihre Kampagne verwalten."
         },
         "heading": {
           "label": "So funktioniert es"
@@ -57,7 +57,7 @@
       },
       "feature4": {
         "description": {
-          "label": "Erstellen Sie Kampagnen für maximale Performance und präsentieren Sie Ihre Produkte Millionen von potenziellen Kunden über die Google-Suche, den Tab \"Shopping\", Google Mail, YouTube und das Displaynetzwerk."
+          "label": "Erstellen Sie eine Kampagne für maximale Performance und präsentieren Sie Ihre Produkte Millionen von potenziellen Kunden über die Google-Suche, den Tab \"Shopping\", Google Mail, YouTube und das Displaynetzwerk."
         },
         "heading": {
           "label": "Kampagnen für maximale Performance"
@@ -73,7 +73,7 @@
       },
       "feature6": {
         "description": {
-          "label": "Nutzen Sie den Leistungsbericht, um einen Überblick über die Kosten Ihrer Kampagnen zu behalten und ihre Leistung zu evaluieren."
+          "label": "Nutzen Sie den Leistungsbericht, um einen Überblick über die Kosten Ihrer Kampagne zu behalten und ihre Leistung zu evaluieren."
         },
         "heading": {
           "label": "Leistungsbericht"
@@ -111,7 +111,7 @@
         }
       },
       "tagline": {
-        "label": "Mit dieser Integration können Sie ganz bequem im Administrationsbereich Ihres Shops Kampagnen für maximale Performance erstellen, um Ihre Produkte bei Google zu bewerben. Zudem können Sie die Leistung Ihrer Kampagnen direkt in Ihrer Shop-Administration im Blick behalten. Kampagnen für maximale Performance nutzen maschinelles Lernen von Google, um das bestmögliche Ergebnis für Ihren Produkt-Feed zu erzielen. Dadurch lernt Ihre Kampagne, optimiert sich kontinuierlich und hilft Ihnen dabei, mehr potenzielle Kunden zu erreichen und Ihren Umsatz zu steigern. Starten Sie jetzt, indem Sie sich mit Google anmelden."
+        "label": "Mit dieser Integration können Sie ganz bequem im Administrationsbereich Ihres Shops eine Kampagne für maximale Performance erstellen, um Ihre Produkte bei Google zu bewerben. Zudem können Sie die Leistung Ihrer Kampagne direkt in Ihrer Shop-Administration im Blick behalten. Kampagnen für maximale Performance nutzen maschinelles Lernen von Google, um das bestmögliche Ergebnis für Ihren Produkt-Feed zu erzielen. Dadurch lernt Ihre Kampagne, optimiert sich kontinuierlich und hilft Ihnen dabei, mehr potenzielle Kunden zu erreichen und Ihren Umsatz zu steigern. Starten Sie jetzt, indem Sie sich mit Google anmelden."
       },
       "title": {
         "label": "Shopping-Anzeigen auf Google"
