@@ -11,21 +11,21 @@
   "views": {
     "callback": {
       "heading": {
-        "errorlabel": "Login failed",
-        "label": "Login successful"
+        "errorlabel": "Sign-in failed",
+        "label": "Sign-in successful"
       },
       "redirectionMessage": {
-        "label_one": "In 1 second, you will be automatically redirected into your shop, to finish the installation of the Google app.",
-        "label_other": "In {{count}} seconds, you will be automatically redirected into your shop, to finish the installation of the Google app."
+        "label_one": "In 1 second, you will be automatically redirected to your shop to finish the setup of the integration.",
+        "label_other": "In {{count}} seconds, you will be automatically redirected to your shop to finish the setup of the integration."
       },
       "redirectNowButton": {
-        "label": "Return now"
+        "label": "Back"
       }
     },
     "homepage": {
       "concept": {
         "description": {
-          "label": "Our integration manages your Google Merchant Center and Google Ads accounts on your behalf. After you have exported your products to your Merchant Center account and set up your billing information in your Google Ads account, you can use the integration to easily create your campaign in your shop administration. As the integration is connected to your Google accounts, you can also conveniently track your campaigns there."
+          "label": "The integration manages your Google Merchant Center and Google Ads accounts on your behalf. After you have uploaded your products to your Merchant Center account and set up your billing information in your Google Ads account, you can use the integration to easily create a campaign in your shop administration. As the integration is connected to your Google accounts, you can also conveniently track your campaigns there."
         },
         "heading": {
           "label": "How it works"
@@ -33,7 +33,7 @@
       },
       "feature1": {
         "description": {
-          "label": "Connect your shop to a Merchant Center account and upload the shop and product data to Google. You can either use an existing account or simply create a new one without even leaving your shop."
+          "label": "Connect your shop to a Merchant Center account and upload your shop and product data to Google. You can either use an existing account or simply create a new one without even leaving your shop."
         },
         "heading": {
           "label": "Merchant Center account"
@@ -41,10 +41,10 @@
       },
       "feature2": {
         "description": {
-          "label": "Export the products you want to promote to Google and automatically synchronise them."
+          "label": "Upload the products you want to promote to Google and automatically synchronise them."
         },
         "heading": {
-          "label": "Product export"
+          "label": "Upload products"
         }
       },
       "feature3": {
@@ -73,7 +73,7 @@
       },
       "feature6": {
         "description": {
-          "label": "Keep an overview of the benefits and costs of your campaigns in our performance report. This enables you to evaluate the success of your campaign."
+          "label": "Use the performance report to keep an overview of the benefits and costs of your campaigns and evaluate their success."
         },
         "heading": {
           "label": "Performance reports"
@@ -111,7 +111,7 @@
         }
       },
       "tagline": {
-        "label": "With our integration, you can easily create Performance Max campaigns to advertise your products on Google and keep track of their performance comfortably within your shop administration. Performance Max campaigns combine your product feed and Google's machine learning to achieve the best possible result. This way, the campaign learns and improves continuously, helping you to reach more online shoppers and maximize your sales revenue. Get started by signing in with Google."
+        "label": "With our integration, you can easily create Performance Max campaigns to advertise your products on Google and keep track of their performance comfortably within your shop administration. Performance Max campaigns combine your product feed and Google's machine learning to achieve the best possible results. The campaign learns and improves continuously, helping you to reach more online shoppers and maximize your sales revenue. Get started by signing in with Google."
       },
       "title": {
         "label": "Shopping ads on Google"

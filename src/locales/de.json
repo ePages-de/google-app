@@ -11,20 +11,21 @@
   "views": {
     "callback": {
       "heading": {
-        "label": "Login erfolgreich"
+        "errorlabel": "Anmeldung fehlgeschlagen",
+        "label": "Anmeldung erfolgreich"
       },
       "redirectionMessage": {
-        "label_one": "Sie werden in 1 Sekunde automatisch zurück in Ihren Shop umgeleitet, um die Installation der Google App abzuschließen.",
-        "label_other": "Sie werden in {{count}} Sekunden automatisch zurück in Ihren Shop umgeleitet, um die Installation der Google App abzuschließen."
+        "label_one": "Sie werden in 1 Sekunde automatisch zu Ihrem Shop weitergeleitet, damit Sie die Einrichtung der Integration abschließen können.",
+        "label_other": "Sie werden in {{count}} Sekunden automatisch zu Ihrem Shop weitergeleitet, damit Sie die Einrichtung der Integration abschließen können."
       },
       "redirectNowButton": {
-        "label": "Jetzt zurückkehren"
+        "label": "Zurück"
       }
     },
     "homepage": {
       "concept": {
         "description": {
-          "label": "Unsere Integration verwaltet Ihr Google Merchant Center- und Ads-Konto für Sie. Nachdem Sie Ihre Produkte zu Ihrem Merchant Center-Konto exportiert und Ihre Abrechnungsinformationen in Ihrem Google Ads-Konto eingerichtet haben, können Sie die Integration nutzen, um Ihre Kampagne ganz einfach im Administrationsbereich Ihres Shops zu erstellen. Da die Integration mit Ihren Google-Konten verbunden ist, können Sie dort auch bequem Ihre Kampagnen verwalten."
+          "label": "Die Integration verwaltet Ihr Google Merchant Center- und Google Ads-Konto für Sie. Nachdem Sie Ihre Produkte zu Ihrem Merchant Center-Konto hochgeladen und Ihre Abrechnungsinformationen in Ihrem Google Ads-Konto eingerichtet haben, können Sie die Integration nutzen, um ganz einfach im Administrationsbereich Ihres Shops eine Kampagne zu erstellen. Da die Integration mit Ihren Google-Konten verbunden ist, können Sie dort auch bequem Ihre Kampagnen verwalten."
         },
         "heading": {
           "label": "So funktioniert es"
@@ -32,7 +33,7 @@
       },
       "feature1": {
         "description": {
-          "label": "Verbinden Sie Ihren Shop mit einem Merchant Center-Konto und laden Sie die Shop- und Produktdaten zu Google hoch. Sie können entweder ein bestehendes Konto verwenden oder einfach direkt im Administrationsbereich Ihres Shops ein neues Konto erstellen."
+          "label": "Verbinden Sie Ihren Shop mit einem Merchant Center-Konto und laden Sie Ihre Shop- und Produktdaten zu Google hoch. Sie können entweder ein bestehendes Konto verwenden oder einfach direkt im Administrationsbereich Ihres Shops ein neues Konto erstellen."
         },
         "heading": {
           "label": "Merchant Center-Konto"
@@ -40,10 +41,10 @@
       },
       "feature2": {
         "description": {
-          "label": "Exportieren Sie die Produkte, die Sie bewerben möchten, zu Google und synchronisieren Sie sie automatisch"
+          "label": "Laden Sie die Produkte, die Sie bewerben möchten, zu Google hoch und synchronisieren Sie sie automatisch."
         },
         "heading": {
-          "label": "Produkte exportieren"
+          "label": "Produkte hochladen"
         }
       },
       "feature3": {
@@ -64,7 +65,7 @@
       },
       "feature5": {
         "description": {
-          "label": "Verfolgen Sie die Anzahl der Conversions und den Umsatz, den Ihre Kampagne für Sie generiert, direkt im Administrationsbereich Ihres Shops.."
+          "label": "Verfolgen Sie die Anzahl der Conversions und den Umsatz, den Ihre Kampagne für Sie generiert, direkt im Administrationsbereich Ihres Shops."
         },
         "heading": {
           "label": "Conversion-Tracking"
@@ -72,7 +73,7 @@
       },
       "feature6": {
         "description": {
-          "label": "Leistungsbericht"
+          "label": "Nutzen Sie den Leistungsbericht, um einen Überblick über die Kosten Ihrer Kampagnen zu behalten und ihre Leistung zu evaluieren."
         },
         "heading": {
           "label": "Leistungsbericht"
@@ -110,10 +111,10 @@
         }
       },
       "tagline": {
-        "label": "Mithilfe unserer Integration können Sie einfach und bequem im Administrationsbereich Ihres Shops Kampagnen für maximale Performance erstellen, um Ihre Produkte bei Google zu bewerben. Zudem können Sie die Leistung Ihrer Kampagnen direkt in Ihrer Shop-Administration im Blick behalten. Kampagnen für maximale Performance kombinieren Ihren Produkt-Feed und das maschinelle Lernen von Google, um das bestmögliche Ergebnis zu erzielen. Dadurch lernt und optimiert sich die Kampagne kontinuierlich und hilft Ihnen dabei, mehr potenzielle Kunden zu erreichen und Ihren Umsatz zu steigern."
+        "label": "Mit dieser Integration können Sie ganz bequem im Administrationsbereich Ihres Shops Kampagnen für maximale Performance erstellen, um Ihre Produkte bei Google zu bewerben. Zudem können Sie die Leistung Ihrer Kampagnen direkt in Ihrer Shop-Administration im Blick behalten. Kampagnen für maximale Performance nutzen maschinelles Lernen von Google, um das bestmögliche Ergebnis für Ihren Produkt-Feed zu erzielen. Dadurch lernt Ihre Kampagne, optimiert sich kontinuierlich und hilft Ihnen dabei, mehr potenzielle Kunden zu erreichen und Ihren Umsatz zu steigern. Starten Sie jetzt, indem Sie sich mit Google anmelden."
       },
       "title": {
-        "label": "Shopping ads für Google"
+        "label": "Shopping-Anzeigen auf Google"
       }
     }
   }
