@@ -41,7 +41,7 @@
       },
       "feature2": {
         "description": {
-          "label": "Laden Sie die Produkte, die Sie bewerben möchten, zu Google hoch und synchronisieren Sie sie automatisch."
+          "label": "Laden Sie Produkte, die Sie bewerben möchten, zu Google hoch. Änderungen, die Sie an Ihren Produkten vornehmen, werden automatisch synchronisiert."
         },
         "heading": {
           "label": "Produkte hochladen"

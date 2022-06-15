@@ -41,7 +41,7 @@
       },
       "feature2": {
         "description": {
-          "label": "Upload the products you want to promote to Google and automatically synchronise them."
+          "label": "Upload the products you want to promote to Google. Changes you make to your products will be automatically synchronised."
         },
         "heading": {
           "label": "Upload products"
