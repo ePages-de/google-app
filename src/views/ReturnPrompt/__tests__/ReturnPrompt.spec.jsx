@@ -10,7 +10,7 @@ it('renders return prompt', async () => {
   initializeEnglishLocale();
   render(<ReturnPrompt oauthResponseParams={ _oauthResponseParamsWithState() } />)
   
-  screen.getByText('Return now');
+  screen.getByText('Back');
 });
 
 it('renders token generation snippet', async () => {
@@ -36,7 +36,7 @@ it('allow redirect to exactly matching external uri', async () => {
   initializeEnglishLocale();
   render(<ReturnPrompt oauthResponseParams={ _oauthResponseParamsWithExactlyMatchingExternalRedirectUri() } />)
   
-  screen.getByText('Return now');
+  screen.getByText('Back');
 });
 
 function _oauthResponseParamsWithState() {
