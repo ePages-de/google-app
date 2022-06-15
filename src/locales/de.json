@@ -1,113 +1,4 @@
 {
-  "views": {
-    "homepage": {
-      "navbar": {
-        "features": {
-          "label": "Funktionen"
-        },
-        "concept": {
-          "label": "Konzept"
-        },
-        "legal": {
-          "label": "Rechtliches"
-        }
-      },
-      "title": {
-        "label": "Shopping ads für Google"
-      },
-      "tagline": {
-        "label": "Mithilfe unserer Integration können Sie einfach und bequem im Administrationsbereich Ihres Shops smarte Shopping-Kampagnen erstellen, um Ihre Produkte bei Google zu bewerben. Zudem können Sie die Leistung Ihrer Kampagnen direkt in Ihrer Shop-Administration im Blick behalten. Smarte Shopping-Kampagnen kombinieren Ihren Produkt-Feed und das maschinelle Lernen von Google, um das bestmögliche Ergebnis zu erzielen. Dadurch lernt und optimiert sich die Kampagne kontinuierlich und hilft Ihnen dabei, mehr potenzielle Kunden zu erreichen und Ihren Umsatz zu steigern."
-      },
-      "concept": {
-        "heading": {
-          "label": "So funktioniert es"
-        },
-        "description": {
-          "label": "Unsere Integration verwaltet Ihr Google Merchant Center- und Ads-Konto für Sie. Nachdem Sie Ihre Produkte zu Ihrem Merchant Center-Konto exportiert und Ihre Abrechnungsinformationen in Ihrem Google Ads-Konto eingerichtet haben, können Sie die Integration nutzen, um Ihre Kampagne ganz einfach im Administrationsbereich Ihres Shops zu erstellen. Da die Integration mit Ihren Google-Konten verbunden ist, können Sie dort auch bequem Ihre Kampagnen verwalten."
-        }
-      },
-      "feature1": {
-        "heading": {
-          "label": "Merchant Center-Konto"
-        },
-        "description": {
-          "label": "Verbinden Sie Ihren Shop mit einem Merchant Center-Konto und laden Sie die Shop- und Produktdaten zu Google hoch. Sie können entweder ein bestehendes Konto verwenden oder einfach direkt im Administrationsbereich Ihres Shops ein neues Konto erstellen."
-        }
-      },
-      "feature2": {
-        "heading": {
-          "label": "Produkte exportieren"
-        },
-        "description": {
-          "label": "Exportieren Sie die Produkte, die Sie bewerben möchten, zu Google und synchronisieren Sie sie automatisch"
-        }
-      },
-      "feature3": {
-        "heading": {
-          "label": "Google Ads-Konto"
-        },
-        "description": {
-          "label": "Erstellen Sie direkt im Administrationsbereich Ihres Shops ein Google Ads-Konto, um Ihre Kampagnen und Kampagnendaten zu verwalten."
-        }
-      },
-      "feature4": {
-        "heading": {
-          "label": "Smarte Shopping-Kampagnen"
-        },
-        "description": {
-          "label": "Smarte Shopping-Kampagnen\nErstellen Sie smarte Shopping-Kampagnen und präsentieren Sie Ihre Produkte Millionen von potenziellen Kunden über die Google-Suche, Google Shopping, Google Mail, YouTube und das Displaynetzwerk."
-        }
-      },
-      "feature5": {
-        "heading": {
-          "label": "Conversion-Tracking"
-        },
-        "description": {
-          "label": "Verfolgen Sie die Anzahl der Conversions und den Umsatz, den Ihre Kampagne für Sie generiert, direkt im Administrationsbereich Ihres Shops.."
-        }
-      },
-      "feature6": {
-        "heading": {
-          "label": "Leistungsbericht"
-        },
-        "description": {
-          "label": "Leistungsbericht"
-        }
-      },
-      "legal": {
-        "heading": {
-          "label": "Rechtliches"
-        },
-        "privacyNotice": {
-          "label": "Datenschutzrichtlinie"
-        },
-        "termsOfUse": {
-          "label": "Allgemeine Geschäftsbedingungen"
-        },
-        "copyrightNotice": {
-          "label": "© ePages GmbH 2021. Alle Rechte vorbehalten."
-        },
-        "imprint": {
-          "label": "Impressum"
-        },
-        "imprintLink": {
-          "label": "https://epages.com/de/impressum/"
-        }
-      }
-    },
-    "callback": {
-      "heading": {
-        "label": "Login erfolgreich"
-      },
-      "redirectionMessage": {
-        "label_one": "Sie werden in 1 Sekunde automatisch zurück in Ihren Shop umgeleitet, um die Installation der Google App abzuschließen.",
-        "label_other": "Sie werden in {{count}} Sekunden automatisch zurück in Ihren Shop umgeleitet, um die Installation der Google App abzuschließen."
-      },
-      "redirectNowButton": {
-        "label": "Jetzt zurückkehren"
-      }
-    }
-  },
   "components": {
     "googleLoginButton": {
       "label": "Mit Google anmelden"
@@ -116,5 +7,115 @@
   "legalContent": {
     "privacyNotice": "privacy-notice_de.pdf",
     "termsOfUse": "terms-of-use_de.pdf"
+  },
+  "views": {
+    "callback": {
+      "heading": {
+        "errorlabel": "Anmeldung fehlgeschlagen",
+        "label": "Anmeldung erfolgreich"
+      },
+      "redirectionMessage": {
+        "label_one": "Sie werden in 1 Sekunde automatisch zu Ihrem Shop weitergeleitet, damit Sie die Einrichtung der Integration abschließen können.",
+        "label_other": "Sie werden in {{count}} Sekunden automatisch zu Ihrem Shop weitergeleitet, damit Sie die Einrichtung der Integration abschließen können."
+      },
+      "redirectNowButton": {
+        "label": "Zurück"
+      }
+    },
+    "homepage": {
+      "concept": {
+        "description": {
+          "label": "Die Integration verwaltet Ihr Google Merchant Center- und Google Ads-Konto für Sie. Nachdem Sie Ihre Produkte zu Ihrem Merchant Center-Konto hochgeladen und Ihre Abrechnungsinformationen in Ihrem Google Ads-Konto eingerichtet haben, können Sie die Integration nutzen, um ganz einfach im Administrationsbereich Ihres Shops eine Kampagne zu erstellen. Da die Integration mit Ihren Google-Konten verbunden ist, können Sie dort auch bequem Ihre Kampagne verwalten."
+        },
+        "heading": {
+          "label": "So funktioniert es"
+        }
+      },
+      "feature1": {
+        "description": {
+          "label": "Verbinden Sie Ihren Shop mit einem Merchant Center-Konto und laden Sie Ihre Shop- und Produktdaten zu Google hoch. Sie können entweder ein bestehendes Konto verwenden oder einfach direkt im Administrationsbereich Ihres Shops ein neues Konto erstellen."
+        },
+        "heading": {
+          "label": "Merchant Center-Konto"
+        }
+      },
+      "feature2": {
+        "description": {
+          "label": "Laden Sie Produkte, die Sie bewerben möchten, zu Google hoch. Änderungen, die Sie an Ihren Produkten vornehmen, werden automatisch synchronisiert."
+        },
+        "heading": {
+          "label": "Produkte hochladen"
+        }
+      },
+      "feature3": {
+        "description": {
+          "label": "Erstellen Sie direkt im Administrationsbereich Ihres Shops ein Google Ads-Konto, um Ihre Kampagnen und Kampagnendaten zu verwalten."
+        },
+        "heading": {
+          "label": "Google Ads-Konto"
+        }
+      },
+      "feature4": {
+        "description": {
+          "label": "Erstellen Sie eine Kampagne für maximale Performance und präsentieren Sie Ihre Produkte Millionen von potenziellen Kunden über die Google-Suche, den Tab \"Shopping\", Google Mail, YouTube und das Displaynetzwerk."
+        },
+        "heading": {
+          "label": "Kampagnen für maximale Performance"
+        }
+      },
+      "feature5": {
+        "description": {
+          "label": "Verfolgen Sie die Anzahl der Conversions und den Umsatz, den Ihre Kampagne für Sie generiert, direkt im Administrationsbereich Ihres Shops."
+        },
+        "heading": {
+          "label": "Conversion-Tracking"
+        }
+      },
+      "feature6": {
+        "description": {
+          "label": "Nutzen Sie den Leistungsbericht, um einen Überblick über die Kosten Ihrer Kampagne zu behalten und ihre Leistung zu evaluieren."
+        },
+        "heading": {
+          "label": "Leistungsbericht"
+        }
+      },
+      "legal": {
+        "copyrightNotice": {
+          "label": "© ePages GmbH 2021. Alle Rechte vorbehalten."
+        },
+        "heading": {
+          "label": "Rechtliches"
+        },
+        "imprint": {
+          "label": "Impressum"
+        },
+        "imprintLink": {
+          "label": "https://epages.com/de/impressum/"
+        },
+        "privacyNotice": {
+          "label": "Datenschutzrichtlinie"
+        },
+        "termsOfUse": {
+          "label": "Allgemeine Geschäftsbedingungen"
+        }
+      },
+      "navbar": {
+        "concept": {
+          "label": "Konzept"
+        },
+        "features": {
+          "label": "Funktionen"
+        },
+        "legal": {
+          "label": "Rechtliches"
+        }
+      },
+      "tagline": {
+        "label": "Mit dieser Integration können Sie ganz bequem im Administrationsbereich Ihres Shops eine Kampagne für maximale Performance erstellen, um Ihre Produkte bei Google zu bewerben. Zudem können Sie die Leistung Ihrer Kampagne direkt in Ihrer Shop-Administration im Blick behalten. Kampagnen für maximale Performance nutzen maschinelles Lernen von Google, um das bestmögliche Ergebnis für Ihren Produkt-Feed zu erzielen. Dadurch lernt Ihre Kampagne, optimiert sich kontinuierlich und hilft Ihnen dabei, mehr potenzielle Kunden zu erreichen und Ihren Umsatz zu steigern. Starten Sie jetzt, indem Sie sich mit Google anmelden."
+      },
+      "title": {
+        "label": "Shopping-Anzeigen auf Google"
+      }
+    }
   }
 }
