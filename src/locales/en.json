@@ -11,8 +11,8 @@
   "views": {
     "callback": {
       "heading": {
-        "errorlabel": "Sign-in failed",
-        "label": "Sign-in successful"
+        "errorlabel": "Sign in failed",
+        "label": "Sign in successful"
       },
       "redirectionMessage": {
         "label_one": "In 1 second, you will be automatically redirected to your shop to finish the setup of the integration.",

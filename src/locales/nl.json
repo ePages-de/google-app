@@ -1,7 +1,7 @@
 {
   "components": {
     "googleLoginButton": {
-      "label": "Sign in with Google"
+      "label": "Inloggen met Google"
     }
   },
   "legalContent": {
@@ -11,91 +11,92 @@
   "views": {
     "callback": {
       "heading": {
-        "label": "Login successful"
+        "errorlabel": "Inloggen mislukt",
+        "label": "Ingelogd"
       },
       "redirectionMessage": {
-        "label_one": "In 1 second, you will be automatically redirected into your shop, to finish the installation of the Google app.",
-        "label_other": "In {{count}} seconds, you will be automatically redirected into your shop, to finish the installation of the Google app."
+        "label_one": "U wordt over 1 seconde automatisch naar uw winkel geleid om de set-up van de integratie te voltooien.",
+        "label_other": "U wordt over {{count}} seconden automatisch naar uw winkel geleid om de set-up van de integratie te voltooien."
       },
       "redirectNowButton": {
-        "label": "Return now"
+        "label": "Terug"
       }
     },
     "homepage": {
       "concept": {
         "description": {
-          "label": "ePages is managing your Google Merchant Center and Google Ads accounts on your behalf. Your products are uploaded to the Merchant Center. The Merchant Center account gets linked with the Ads account. In the Ads account campaigns get created and reports get fetched, so that you need nothing to do in the Ads account but setting up your billing information. After the creation of a Smart Shopping Campaign, tracking information for Conversion Actions and Remarketing Tags will be sent from your shop to Google."
+          "label": "De integratie beheert uw Google Merchant Center- en Google Ads-account namens u. Nadat u uw producten hebt geüpload naar uw Merchant Center-account en uw factureringsgegevens hebt ingesteld in uw Google Ads-account, kunt u de integratie gebruiken om eenvoudig een campagne aan te maken in uw winkelbeheer. Als de integratie verbonden is aan uw Google-accounts, kunt u hier ook handig uw campagne volgen."
         },
         "heading": {
-          "label": "Concept"
+          "label": "Zo werkt het"
         }
       },
       "feature1": {
         "description": {
-          "label": "Connect your shop with an already existing Google Merchant Center account or create a new account directly from within the shop."
+          "label": "Verbind uw winkel aan een Merchant Center-account en upload uw winkel en productgegevens naar Google. U kunt een bestaand account gebruiken of eenvoudig een nieuwe aanmaken zonder uw winkel te verlaten."
         },
         "heading": {
-          "label": "Google Merchant Center"
+          "label": "Merchant Center-account"
         }
       },
       "feature2": {
         "description": {
-          "label": "Automatically upload and synchronise the products in your shop with the Google Merchant Center, using the FTP upload."
+          "label": "Upload de producten die u op Google wilt promoten. Als u wijzigingen aanbrengt aan de producten, worden deze automatisch gesynchroniseerd."
         },
         "heading": {
-          "label": "Product upload"
+          "label": "Producten uploaden"
         }
       },
       "feature3": {
         "description": {
-          "label": "Create a new Google Ads account, directly from within your shop administration."
+          "label": "Maak rechtstreeks vanuit uw winkelbeheer een Google Ads-account aan, zodat u uw campagnes en campagnegegevens kunt beheren."
         },
         "heading": {
-          "label": "Google Ads"
+          "label": "Google Ads-account"
         }
       },
       "feature4": {
         "description": {
-          "label": "Create ad campaigns with showcase your products to millions of shoppers across Google Search, Shopping, Gmail, YouTube, and the Display Network."
+          "label": "Maak een campagne voor maximale prestaties aan en toon uw producten aan miljoenen shoppers op Google Zoeken, het tabblad Shopping, Gmail, YouTube en het Display Netwerk."
         },
         "heading": {
-          "label": "Smart Shopping Campaigns"
+          "label": "Campagnes voor maximale prestaties"
         }
       },
       "feature5": {
         "description": {
-          "label": "When someone follows an ad and then purchases something, we will keep track of it and send this information to Google Ads."
+          "label": "Zie rechtstreeks in uw winkelbeheer hoeveel conversies en winst uw campagne voor uw genereert."
         },
         "heading": {
-          "label": "Conversion tracking"
+          "label": "Conversietracking"
         }
       },
       "feature6": {
         "description": {
-          "label": "You will have an overview over the costs and benefits of your Smart Shopping Campaigns directly in your shop administration."
+          "label": "Gebruik het prestatierapport om overzicht te houden over de kosten en baten van uw campagne en om het succes ervan te beoordelen."
         },
         "heading": {
-          "label": "Campaign performance reports"
+          "label": "Prestatierapporten"
         }
       },
       "legal": {
         "copyrightNotice": {
-          "label": "© ePages GmbH 2021. All rights reserved."
+          "label": "© ePages GmbH 2021. Alle rechten voorbehouden."
         },
         "heading": {
-          "label": "Legal content"
+          "label": "Juridische content"
         },
         "imprint": {
-          "label": "Imprint"
+          "label": "Afdrukken"
         },
         "imprintLink": {
           "label": "https://epages.com/en/legal-notice"
         },
         "privacyNotice": {
-          "label": "Privacy notice"
+          "label": "Privacyverklaring"
         },
         "termsOfUse": {
-          "label": "Terms of use"
+          "label": "Gebruiksvoorwaarden"
         }
       },
       "navbar": {
@@ -103,17 +104,17 @@
           "label": "Concept"
         },
         "features": {
-          "label": "Features"
+          "label": "Functies"
         },
         "legal": {
-          "label": "Legal"
+          "label": "Juridisch"
         }
       },
       "tagline": {
-        "label": "With Shopping ads on Google you can create ads for the products in your online shop with minimal effort. Connect your Google accounts, upload your products, and create a campaign – done."
+        "label": "Met deze integratie kunt u eenvoudig een campagne voor maximale prestaties aanmaken om uw producten op Google te adverteren en de prestaties ervan handig in uw eigen winkelbeheer bijhouden. Campagnes voor maximale prestaties combineren uw productfeed met machine learning van Google om de best mogelijke resultaten te behalen. De campagne leert en verbetert continu, zodat u meer online shoppers bereikt en uw verkoopcijfers stijgen. Log in met Google om te beginnen."
       },
       "title": {
-        "label": "Shopping ads on Google"
+        "label": "Shopping-advertenties op Google"
       }
     }
   }

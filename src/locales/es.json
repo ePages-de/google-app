@@ -1,7 +1,7 @@
 {
   "components": {
     "googleLoginButton": {
-      "label": "Sign in with Google"
+      "label": "Acceder con Google"
     }
   },
   "legalContent": {
@@ -11,109 +11,110 @@
   "views": {
     "callback": {
       "heading": {
-        "label": "Login successful"
+        "errorlabel": "Error al iniciar sesión",
+        "label": " Sesión iniciada con éxito"
       },
       "redirectionMessage": {
-        "label_one": "In 1 second, you will be automatically redirected into your shop, to finish the installation of the Google app.",
-        "label_other": "In {{count}} seconds, you will be automatically redirected into your shop, to finish the installation of the Google app."
+        "label_one": "En 1 segundo, se le redirigirá automáticamente a su tienda para finalizar la configuración de la integración.",
+        "label_other": "En {{count}} segundos, se le redirigirá automáticamente a su tienda para finalizar la configuración de la integración."
       },
       "redirectNowButton": {
-        "label": "Return now"
+        "label": "Atrás"
       }
     },
     "homepage": {
       "concept": {
         "description": {
-          "label": "ePages is managing your Google Merchant Center and Google Ads accounts on your behalf. Your products are uploaded to the Merchant Center. The Merchant Center account gets linked with the Ads account. In the Ads account campaigns get created and reports get fetched, so that you need nothing to do in the Ads account but setting up your billing information. After the creation of a Smart Shopping Campaign, tracking information for Conversion Actions and Remarketing Tags will be sent from your shop to Google."
+          "label": "La integración gestiona por usted su cuenta de  Merchant Center en Google y su cuenta de Google Ads. Después de que haya cargado sus productos en su cuenta de Merchant Center y configurado sus datos de facturación en su cuenta de Google Ads, puede utilizar la integración para crear fácilmente una campaña en la administración de la tienda. Puesto que la integración está conectada a sus cuentas de Google, también puede hacer un seguimiento cómodo de su campaña desde ahí."
         },
         "heading": {
-          "label": "Concept"
+          "label": "Cómo funciona"
         }
       },
       "feature1": {
         "description": {
-          "label": "Connect your shop with an already existing Google Merchant Center account or create a new account directly from within the shop."
+          "label": "Conecte su tienda a la cuenta de Merchant Center y cargue los datos de la tienda y de los productos a Google. Puede utilizar una cuenta existente o simplemente crear una nueva sin incluso tener que salir de su tienda."
         },
         "heading": {
-          "label": "Google Merchant Center"
+          "label": "Cuenta de Merchant Center"
         }
       },
       "feature2": {
         "description": {
-          "label": "Automatically upload and synchronise the products in your shop with the Google Merchant Center, using the FTP upload."
+          "label": "Cargue los productos que quiera promocionar en Google. Los cambios que haga en sus productos se sincronizarán automáticamente."
         },
         "heading": {
-          "label": "Product upload"
+          "label": "Cargar productos"
         }
       },
       "feature3": {
         "description": {
-          "label": "Create a new Google Ads account, directly from within your shop administration."
+          "label": "Cree una cuenta de Google Ads directamente desde la administración de la tienda para gestionar sus campañas y datos de campañas."
         },
         "heading": {
-          "label": "Google Ads"
+          "label": "Cuenta de Google Ads"
         }
       },
       "feature4": {
         "description": {
-          "label": "Create ad campaigns with showcase your products to millions of shoppers across Google Search, Shopping, Gmail, YouTube, and the Display Network."
+          "label": "Cree una campaña Máximo rendimiento y presente sus productos a millones de compradores en Google Search, la pestaña \"Shopping\", Gmail, YouTube y Display Network."
         },
         "heading": {
-          "label": "Smart Shopping Campaigns"
+          "label": "Campañas Máximo rendimiento"
         }
       },
       "feature5": {
         "description": {
-          "label": "When someone follows an ad and then purchases something, we will keep track of it and send this information to Google Ads."
+          "label": "Vea el número de conversiones y los ingresos que genera su campaña directamente en la administración de la tienda."
         },
         "heading": {
-          "label": "Conversion tracking"
+          "label": "Seguimiento de conversiones"
         }
       },
       "feature6": {
         "description": {
-          "label": "You will have an overview over the costs and benefits of your Smart Shopping Campaigns directly in your shop administration."
+          "label": "Utilice el informe de rendimiento para disponer de una visión general de los beneficios y costes de su campaña y evaluar su éxito."
         },
         "heading": {
-          "label": "Campaign performance reports"
+          "label": "Informes de rendimiento"
         }
       },
       "legal": {
         "copyrightNotice": {
-          "label": "© ePages GmbH 2021. All rights reserved."
+          "label": "© ePages GmbH 2021. Todos los derechos reservados."
         },
         "heading": {
-          "label": "Legal content"
+          "label": "Contenido legal"
         },
         "imprint": {
-          "label": "Imprint"
+          "label": "Aviso legal"
         },
         "imprintLink": {
           "label": "https://epages.com/en/legal-notice"
         },
         "privacyNotice": {
-          "label": "Privacy notice"
+          "label": "Nota de privacidad"
         },
         "termsOfUse": {
-          "label": "Terms of use"
+          "label": "Condiciones de uso"
         }
       },
       "navbar": {
         "concept": {
-          "label": "Concept"
+          "label": "Concepto"
         },
         "features": {
-          "label": "Features"
+          "label": "Funciones"
         },
         "legal": {
           "label": "Legal"
         }
       },
       "tagline": {
-        "label": "With Shopping ads on Google you can create ads for the products in your online shop with minimal effort. Connect your Google accounts, upload your products, and create a campaign – done."
+        "label": "Con esta integración, puede crear fácilmente una campaña Máximo Rendimiento para anunciar sus productos en Google y hacer un seguimiento de su rendimiento cómodamente desde la administración de la tienda. Las campañas Máximo rendimiento combinan el feed de productos y el aprendizaje automático de Google para conseguir los mejores resultados posibles. La campaña aprende y mejora continuamente, ayudándole a llegar a más compradores online y maximizar sus ingresos por ventas. Comience iniciando sesión con Google."
       },
       "title": {
-        "label": "Shopping ads on Google"
+        "label": "Anuncios de Shopping en Google"
       }
     }
   }
